@@ -187,9 +187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62abda01dd9c64303b06953667cfaf58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  word: asssssss
-  img: {fileID: 21300000, guid: e3d27923e7eac4ffeb8bd5a89e0f80f5, type: 3}
-  isCorrect: 0
   renderer: {fileID: 7379958783756601577}
   textRender: {fileID: 1636283559232277649}
   audioSource: {fileID: 4740325405524788633}
@@ -456,7 +453,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &8721299539665577451
 MonoBehaviour:
   m_ObjectHideFlags: 0
