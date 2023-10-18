@@ -29,6 +29,7 @@ public class Word : MonoBehaviour
         this.word = data.word;
         this.img = data.img;
         this.isCorrect = data.isCorrect;
+        this.correctAudio = data.wordVoice;
     }
     
     // Update is called once per frame
