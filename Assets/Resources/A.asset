@@ -14,18 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chooseOption: A
   color: {r: 0.9811321, g: 0.040726196, b: 0.040726196, a: 1}
-  categoriesList:
-  - categoryName: "Con v\u1EADt"
-    imgPath: {fileID: 21300000, guid: 77e72b2ecfeefb343ba056d84111795e, type: 3}
-  - categoryName: "\u0110\u1ED3 v\u1EADt"
-    imgPath: {fileID: 21300000, guid: 4b24670d67515c74f8035aab6657a17b, type: 3}
-  - categoryName: "Con ng\u01B0\u1EDDi"
-    imgPath: {fileID: 21300000, guid: a842ebd76c0e54243a0784ba6f66cd12, type: 3}
   questionsList:
   - questionInfo: "Ch\u1ECDn con v\u1EADt c\xF3 ch\u1EEF A \u0111\u1EA7u ti\xEAn"
-    category:
-      categoryName: "Con v\u1EADt"
-      imgPath: {fileID: 0}
+    options:
+    - "Con kh\u1EC9"
+    - "Con m\xE8o"
+    - "Con r\u1EAFn "
+    - Con A
+    correctAns: Con A
+  - questionInfo: "H\xE3y ch\u1ECDn ch\u1EEF A \u0111i n\xE0o"
+    options:
+    - "Ch\u1EEF A"
+    - "Ch\u1EEF B"
+    - "Ch\u1EEF C"
+    - "Ch\u1EEF D"
+    correctAns: "Ch\u1EEF A"
+  - questionInfo: "H\xE3y ch\u1ECDn ch\u1EEF A \u0111i n\xE0o 11111"
     options:
     - "Con kh\u1EC9"
     - "Con m\xE8o"
