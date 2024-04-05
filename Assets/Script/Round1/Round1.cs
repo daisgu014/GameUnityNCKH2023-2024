@@ -6,7 +6,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
-
+using UnityEngine.SceneManagement;
 public class Round1 : MonoBehaviour
 {
     [SerializeField] List<WordR1> words;
@@ -118,14 +118,18 @@ public class Round1 : MonoBehaviour
                     if (btnEvent.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text == words[i].word.ToString())
                     {
                         Debug.Log("Đúng");
-                        /*success.SetActive(true);*/
+                        btnSuccess();
                     }
                     else
                     {
                         Debug.Log("Sai");
-                       /* fail.SetActive(true);*/
+                        btnFail();
                     }
-
+                    for (int k = 1; k <=5; k++)
+                    {
+                        pn3.GetChild(0).GetChild(k).transform.GetChild(0).GetComponent<TextMeshProUGUI>().fontSize = 250;
+                    }
+                    btnEvent.transform.GetChild(0).GetComponent<TextMeshProUGUI>().fontSize = 600;
                 });
             }
         }
@@ -147,13 +151,12 @@ public class Round1 : MonoBehaviour
         pn4.GetChild(optionRest).GetChild(0).GetComponent<TextMeshProUGUI>().text = words[i].word.ToLower();
         pn4.GetChild(randomWord).GetComponent<Button>().onClick.AddListener(() =>
         {
-            Debug.Log("Đúng");
-            
+            btnSuccess();
         });
          
         pn4.GetChild(optionRest).GetComponent<Button>().onClick.AddListener(() =>
         {
-            Debug.Log("Sai");
+            btnFail();
             /*fail.gameObject.SetActive(true);*/
         });
         pn4.GetChild(2).GetChild(2).GetComponent<AudioSource>().clip = words[i].chooseWordUpper;
@@ -174,14 +177,13 @@ public class Round1 : MonoBehaviour
         pn5.GetChild(optionRest).GetChild(0).GetComponent<TextMeshProUGUI>().text = words[i].word.ToLower();
         pn5.GetChild(optionRest).GetComponent<Button>().onClick.AddListener(() =>
         {
-            Debug.Log("Đúng");
+            btnSuccess();
 
         });
 
         pn5.GetChild(randomWord).GetComponent<Button>().onClick.AddListener(() =>
         {
-            Debug.Log("Sai");
-            /*fail.gameObject.SetActive(true);*/
+            btnFail();
         });
         pn5.GetChild(2).GetChild(2).GetComponent<AudioSource>().clip = words[i].chooseWordLower;
         pn5.GetChild(2).GetChild(0).GetComponent<Button>().onClick.AddListener(() =>
@@ -252,6 +254,28 @@ public class Round1 : MonoBehaviour
         pn4.gameObject.SetActive(false);
         pn5.gameObject.SetActive(false);
     }
+    void btnSuccess()
+    {
+        success.SetActive(true);
+
+        if (success != null)
+        {
+            success.GetComponent<Button>().onClick.AddListener(() => {
+                success.SetActive(false);
+            });
+        }
+    }
+    void btnFail()
+    {
+        fail.SetActive(true);
+
+        if (fail != null)
+        {
+            fail.GetComponent<Button>().onClick.AddListener(() => {
+                fail.SetActive(false);
+            });
+        }
+    }
     void btnNext()
     {
         if (next != null)
@@ -280,6 +304,7 @@ public class Round1 : MonoBehaviour
                         next.gameObject.SetActive(false);
                         break;
                     default:
+                        
                         break;
                 }
                 
