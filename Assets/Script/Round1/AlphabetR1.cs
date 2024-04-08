@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public static class ButtonExtension
@@ -49,5 +50,6 @@ public class AlphabetR1 : MonoBehaviour
         Index.Value = i;
         sceneRound1.SetActive(true);
         sceneAlphabet.SetActive(false);
+        SceneManager.LoadScene("Round3");
     }
 }

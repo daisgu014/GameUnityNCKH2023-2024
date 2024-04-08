@@ -6,6 +6,7 @@ public class Round3 : MonoBehaviour
 {
     public Round3Data data;
     private List<WordData> words;
+    public IndexWord indexWord;
     [SerializeField] private GameObject wordGO;
     [SerializeField] private GameObject wordHolder;
     private Sprite bgImage;
@@ -35,6 +36,7 @@ public class Round3 : MonoBehaviour
             GameObject tmp = Instantiate(wordGO);
             tmp.name = "word" + i;
             tmp.GetComponent<Word>().setData(words[i]);
+            tmp.GetComponent<Word>().setCharIndex(indexWord);
             tmp.transform.position = rootPosition + new Vector3(words[i].X*5,words[i].Y*(-1f)*5);
             tmp.transform.SetParent(wordHolder.transform);
         }
