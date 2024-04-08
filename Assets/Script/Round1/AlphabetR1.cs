@@ -50,6 +50,5 @@ public class AlphabetR1 : MonoBehaviour
         Index.Value = i;
         sceneRound1.SetActive(true);
         sceneAlphabet.SetActive(false);
-        SceneManager.LoadScene("Round3");
     }
 }
