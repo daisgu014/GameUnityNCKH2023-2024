@@ -19,7 +19,6 @@ public class AlphabetR1 : MonoBehaviour
 {
     [SerializeField] private GameObject word;
     [SerializeField] private GameObject sceneAlphabet;
-    [SerializeField] private GameObject sceneRound1;
     [SerializeField] IndexWord Index;
     // Start is called before the first frame update
     void Start()
@@ -48,7 +47,6 @@ public class AlphabetR1 : MonoBehaviour
     void setActive(int i)
     {
         Index.Value = i;
-        sceneRound1.SetActive(true);
-        sceneAlphabet.SetActive(false);
+        SceneManager.LoadScene("Round1");
     }
 }

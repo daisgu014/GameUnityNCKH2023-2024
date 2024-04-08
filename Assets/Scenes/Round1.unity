@@ -724,7 +724,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   word: {fileID: 5444654549703418136, guid: 793c712cb58472e4fa2d0890ff980818, type: 3}
   sceneAlphabet: {fileID: 1897350144}
-  sceneRound1: {fileID: 1717891652}
   Index: {fileID: 11400000, guid: 5ab090cdfa36abe4880ed2280773d736, type: 2}
 --- !u!114 &1381987738
 MonoBehaviour:
@@ -750,11 +749,6 @@ MonoBehaviour:
   m_Spacing: {x: 50, y: 50}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!1 &1717891652 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5180279237443964758, guid: b457919ec1a00a443bfc016011775b73, type: 3}
-  m_PrefabInstance: {fileID: 3044786684494025948}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1717891653 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 704277543895253153, guid: b457919ec1a00a443bfc016011775b73, type: 3}
@@ -896,7 +890,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1897350145
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1091,7 +1085,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5180279237443964758, guid: b457919ec1a00a443bfc016011775b73, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5422675465430680917, guid: b457919ec1a00a443bfc016011775b73, type: 3}
       propertyPath: m_fontAsset
