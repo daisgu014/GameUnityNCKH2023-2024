@@ -301,7 +301,9 @@ public class Round1 : MonoBehaviour
                     case 4:
                         pn5.gameObject.SetActive(true);
                         page++;
-                        next.gameObject.SetActive(false);
+                        break;
+                    case 5:
+                        SceneManager.LoadScene("SampleScene");
                         break;
                     default:
                         

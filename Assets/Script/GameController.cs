@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startBtn.onClick.AddListener(() => loadScene("Round3"));
+        startBtn.onClick.AddListener(() => loadScene("CharBoard"));
     }
 
     // Update is called once per frame
