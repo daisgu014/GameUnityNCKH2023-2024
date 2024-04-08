@@ -7,6 +7,7 @@ public class Word : MonoBehaviour
 {
 
     private string word;
+    public IndexWord current;
     private Sprite img;
     private bool isCorrect = false;
 
@@ -31,7 +32,12 @@ public class Word : MonoBehaviour
         this.isCorrect = data.isCorrect;
         this.correctAudio = data.wordVoice;
     }
-    
+
+    public void setCharIndex(IndexWord indexWord)
+    {
+        current = indexWord;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -40,10 +46,10 @@ public class Word : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log(current.Value);
         if (isCorrect) {
             Debug.Log("Hay quá pé ơi");
             audioSource.PlayOneShot(correctAudio);
-
         }
         else
         {

@@ -15,4 +15,4 @@ MonoBehaviour:
   words:
   - {fileID: 11400000, guid: 67d30c536ad37479d87ab7413cb0bda0, type: 2}
   - {fileID: 11400000, guid: 8c0180113f96c42c9a326e379c8eaffc, type: 2}
-  bgImage: {fileID: 21300000, guid: 6a253e4673dd5034fa76cc22db633cf5, type: 3}
+  bgImage: {fileID: 21300000, guid: 4d824014f3fcca947998218951002280, type: 3}
