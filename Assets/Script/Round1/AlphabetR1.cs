@@ -28,17 +28,27 @@ public class AlphabetR1 : MonoBehaviour
 
         string vietnameseAlphabet = "AĂÂBCDĐEÊGHIKLMNOÔƠPQRSTUƯVWXY";
         int i = 0;
+        List<Color> colors = GenerateRandomColors(vietnameseAlphabet.Length);
         foreach (char character in vietnameseAlphabet)
         {
             g = Instantiate(button, transform);
             g.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = character.ToString();
+            g.transform.GetChild(0).GetComponent<TextMeshProUGUI>().color = colors[i];
             g.GetComponent<Button>().AddEventListener(i, setActive);
             i++;
         }
 
         /*Destroy(button);*/
     }
-
+    List<Color> GenerateRandomColors(int count)
+    {
+        List<Color> randomColors = new List<Color>();
+        for (int i = 0; i < count; i++)
+        {
+            randomColors.Add(new Color(UnityEngine.Random.value, UnityEngine.Random.value, UnityEngine.Random.value));
+        }
+        return randomColors;
+    }
     // Update is called once per frame
     void Update()
     {
