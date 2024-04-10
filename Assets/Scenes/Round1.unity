@@ -1067,6 +1067,14 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4381720300960530645, guid: b457919ec1a00a443bfc016011775b73, type: 3}
+      propertyPath: words.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4381720300960530645, guid: b457919ec1a00a443bfc016011775b73, type: 3}
+      propertyPath: words.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: b8edb5d0c96900949acea7f69777eff3, type: 2}
     - target: {fileID: 4392496764704897654, guid: b457919ec1a00a443bfc016011775b73, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -200
