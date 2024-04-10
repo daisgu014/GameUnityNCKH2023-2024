@@ -32,6 +32,10 @@ public class AudioManager : MonoBehaviour
             audioSource.PlayOneShot(wrongAudio);
         }
     }
+    public void playQuestionAu(AudioClip questionAu)
+    {
+        audioSource.PlayOneShot(questionAu);
+    }
     public void stopAudito()
     {
       

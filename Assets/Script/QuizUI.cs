@@ -18,17 +18,18 @@ public class QuizUI : MonoBehaviour
     [SerializeField] private GameObject gameOverPanel, gamePanel,chooseScreen;
     [SerializeField] private TextMeshProUGUI questionText;
     [SerializeField] private List<Button> options;
-    [SerializeField] private Color correctCol, wrongCol, normalCol;
+    [SerializeField] private Color correctCol, wrongCol;
 
     private Question question;
     private bool answered;
     private float audioLength;
     public TextMeshProUGUI ScoreText { get => scoreText; }
-
+    public AudioManager AudioManager { get => audioManager; }
     public GameObject GameOverPanel { get => gameOverPanel; }
     // Start is called before the first frame update
     private void Start()
     {
+        
         for (int i = 0; i < options.Count; i++)
         {
             Button localBtn = options[i];
@@ -36,8 +37,8 @@ public class QuizUI : MonoBehaviour
                 OnClick(localBtn);
             });
         }
+        manager.StartGame();
 
-        CreateOptionButtons();
     }
     public void setQuestion(Question question)
     {
@@ -46,19 +47,21 @@ public class QuizUI : MonoBehaviour
         questionText.text = question.questionInfo;
         List<string> ansOptions = SuffleList.ShuffleListItems<string>(question.options);
 
-
         if (question.options.Count > 0)
         {
             for (int i = 0; i < options.Count; i++)
             {
                 options[i].GetComponentInChildren<TextMeshProUGUI>().text = ansOptions[i];
                 options[i].name = ansOptions[i];
-                options[i].image.color = normalCol;
             }
         }
         answered = false;
 
 
+    }
+    public void playAgianQuestionAu()
+    {
+        audioManager.playQuestionAu(this.question.questionAudio);
     }
     public void ReduceLife(int remainingLife)
     {
@@ -155,7 +158,6 @@ public class QuizUI : MonoBehaviour
         {
             img.color = Color.white;
             yield return new WaitForSeconds(0.1f);
-            img.color = normalCol;
             yield return new WaitForSeconds(0.1f);
         }
     }

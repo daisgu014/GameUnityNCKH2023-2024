@@ -12,7 +12,7 @@ public class QuizManager : MonoBehaviour
     [SerializeField]
     private List<QuizDataScriptable> quizDataList;
     private Question selectedQuestion = new Question();
-    private string CurrentOption = "";
+    public IndexWord indexWord;
     private int currentInt;
     private Question currentQues = new Question();
     //private List<Category> categories;
@@ -55,13 +55,11 @@ public class QuizManager : MonoBehaviour
     //}
     public void StartGame()
     {
-       
-        //currentCategory = category;
-       // Debug.Log(currentInt);
+        Debug.Log("Thứ tự câu hỏi: " + indexWord.Value);
         correctAnswerCount = 0;
         gameScore = 0;
         quesitons = new List<Question>();
-        dataScriptable = quizDataList[currentInt];
+        dataScriptable = quizDataList[indexWord.Value];
         for(int i = 0; i < dataScriptable.questionsList.Count; i++)
             {
                 quesitons.Add(dataScriptable.questionsList[i]);
@@ -78,16 +76,20 @@ public class QuizManager : MonoBehaviour
     }
     Question SelectQuestion()
     {
+        
         int val = UnityEngine.Random.Range(0, quesitons.Count);
         selectedQuestion = quesitons[val];
         currentQues = selectedQuestion;
+  
         quesitons.RemoveAt(val);
+        quizUI.AudioManager.playQuestionAu(selectedQuestion.questionAudio);
         quizUI.setQuestion(selectedQuestion);
         return selectedQuestion;
 
     }
     void selectQuestionAgian(Question val)
     {
+        
         quizUI.setQuestion(val);
     }
 
@@ -102,7 +104,7 @@ public class QuizManager : MonoBehaviour
     {
         bool correct = false;
         //if selected answer is similar to the correctAns
-        if (selectedQuestion.correctAns == answerd)
+        if (selectedQuestion.correctAns.ToLower() == answerd.ToLower())
         {
             //Yes, Ans is correct
             correctAnswerCount++;
@@ -114,7 +116,7 @@ public class QuizManager : MonoBehaviour
                 if (quesitons.Count > 0)
                 {
                     //call SelectQuestion method again after 1s
-                    Invoke("SelectQuestion", 0.4f);
+                    Invoke("SelectQuestion", 2);
 
                 }
                 else
@@ -153,7 +155,8 @@ public class QuizManager : MonoBehaviour
 public class Question
 {
     
-    public string questionInfo; // câu hỏi
+    public string questionInfo;
+    public AudioClip questionAudio;// câu hỏi
     public List<string> options; // danh sách câu trả lời
     public string correctAns; // đáp án đúng
 

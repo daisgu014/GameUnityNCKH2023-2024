@@ -14,5 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chooseOption: "\u0102"
   color: {r: 0.9339623, g: 0.6743133, b: 0.029957218, a: 1}
-  categoriesList: []
-  questionsList: []
+  questionsList:
+  - questionInfo: "H\xE3y ch\u1ECDn \u0111\u1ED3 v\u1EADt c\xF3 ch\u1EEF \"\u0103\"!"
+    questionAudio: {fileID: 8300000, guid: d0bc2c9fb38dc8347884e4639fbc2248, type: 3}
+    options: []
+    correctAns: 
+  - questionInfo: "H\xE3y ch\u1ECDn \u0111\u1ED3 v\u1EADt c\xF3 ch\u1EEF \"\u0103\"!"
+    questionAudio: {fileID: 8300000, guid: d0bc2c9fb38dc8347884e4639fbc2248, type: 3}
+    options: []
+    correctAns: "H\xE3y ch\u1ECDn \u0111\u1ED3 v\u1EADt c\xF3 ch\u1EEF \"\u0103\"!"
+  - questionInfo: 
+    questionAudio: {fileID: 8300000, guid: d0bc2c9fb38dc8347884e4639fbc2248, type: 3}
+    options: []
+    correctAns: 
+  - questionInfo: 
+    questionAudio: {fileID: 0}
+    options: []
+    correctAns: 
