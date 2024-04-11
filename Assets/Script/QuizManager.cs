@@ -55,7 +55,6 @@ public class QuizManager : MonoBehaviour
     //}
     public void StartGame()
     {
-        Debug.Log("Thứ tự câu hỏi: " + indexWord.Value);
         correctAnswerCount = 0;
         gameScore = 0;
         quesitons = new List<Question>();
@@ -125,7 +124,7 @@ Question SelectQuestion()
                 }
                 else
                 {
-                    GameEnd();
+                    Invoke("GameEnd", 2f);
                 }
             }
         }
@@ -139,7 +138,7 @@ Question SelectQuestion()
             selectQuestionAgian(currentQues);
             if (lifeRemaining == 0)
             {
-                GameEnd();
+                Invoke("GameEnd", 2.5f);
             }
         }
 
@@ -151,7 +150,18 @@ Question SelectQuestion()
     private void GameEnd()
     {
         gameStatus = GameStatus.NEXT;
-        quizUI.GameOverPanel.SetActive(true);
+        quizUI.GamePanel.SetActive(false);
+        quizUI.R2EndObbject.SetActive(true);
+        quizUI.AudioManager.playQuestionAu(quizUI.EndAudio);
+        QuizDataScriptable dataScriptable = dataIndex();
+        for (int i = 0; i < dataScriptable.questionsList.Count; i++)
+        {
+            BtnAnswerAudio btnAnswer = Instantiate(quizUI.BtnAnswerAudioPrefab, quizUI.ScrollHoderEndR2.transform);
+            btnAnswer.setOptionBtn(dataScriptable.questionsList[i].correctAns);
+            int index = i;
+            btnAnswer.Btn.onClick.AddListener(() => { quizUI.AudioManager.playQuestionAu(dataScriptable.questionsList[index].correctAnsAudio); });
+            quizUI.ScrollHoderEndR2.sizeDelta = new Vector2(quizUI.ScrollHoderEndR2.sizeDelta.x, 20 * -i);
+        }
         PlayerPrefs.SetInt(currentCategory, correctAnswerCount); //save the score for this category
     }
 }
