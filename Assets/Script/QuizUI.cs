@@ -15,10 +15,11 @@ public class QuizUI : MonoBehaviour
     [SerializeField] private RectTransform scrollHolder, chooseScreenContent;
     [SerializeField] private ChooseBtn chooseBtnPrefab;
     [SerializeField] private TextMeshProUGUI scoreText;
-    [SerializeField] private GameObject gameOverPanel, gamePanel,chooseScreen;
+    [SerializeField] private GameObject gameOverPanel, gamePanel,chooseScreen, StartR2;
     [SerializeField] private TextMeshProUGUI questionText;
     [SerializeField] private List<Button> options;
     [SerializeField] private Color correctCol, wrongCol;
+    [SerializeField] public AudioClip questionAudio;
 
     private Question question;
     private bool answered;
@@ -29,7 +30,23 @@ public class QuizUI : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        
+
+        playAudioInfo();
+
+    }
+    public void playAudioInfo()
+    {
+        AudioManager.playQuestionAu(questionAudio);
+    }
+    public void loadSenceR1()
+    {
+        SceneManager.LoadScene("Round1");
+    }
+    public void changeGameChooice()
+    {
+        AudioManager.stopAudito();
+        StartR2.SetActive(false);
+        gamePanel.SetActive(true);
         for (int i = 0; i < options.Count; i++)
         {
             Button localBtn = options[i];
@@ -38,8 +55,8 @@ public class QuizUI : MonoBehaviour
             });
         }
         manager.StartGame();
-
     }
+
     public void setQuestion(Question question)
     {
         //questionCounter.text = $"0/{questions.Count.ToString()}";
