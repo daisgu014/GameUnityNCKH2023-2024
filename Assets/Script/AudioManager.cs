@@ -38,6 +38,6 @@ public class AudioManager : MonoBehaviour
     }
     public void stopAudito()
     {
-      
+      audioSource.Stop();
     }
 }
