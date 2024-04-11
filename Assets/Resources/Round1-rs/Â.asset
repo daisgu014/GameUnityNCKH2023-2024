@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: "\xC2"
   m_EditorClassIdentifier: 
   word: "\xC2"
-  clip: {fileID: 0}
-  texture: {fileID: 0}
+  clip: {fileID: 32900000, guid: ffc4df8254ba4904ca19aa54fea187c3, type: 3}
+  texture: {fileID: 8400000, guid: c3492d3b7ad917b40831ff4276ab3f9f, type: 2}
   uppercaseSound: {fileID: 0}
   chooseWordSound: {fileID: 0}
   lowercaseSound: {fileID: 0}
