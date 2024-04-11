@@ -12,22 +12,27 @@ public class QuizUI : MonoBehaviour
     [SerializeField] QuizManager manager;
     [SerializeField] AudioManager audioManager;
     [SerializeField] private List<Image> lifeImageList;
-    [SerializeField] private RectTransform scrollHolder, chooseScreenContent;
+    [SerializeField] private RectTransform scrollHolder, chooseScreenContent, scrollHoderEndR2, chooseScreenContentR2;
     [SerializeField] private ChooseBtn chooseBtnPrefab;
+    [SerializeField] private BtnAnswerAudio btnAnswerAudioPrefab;
     [SerializeField] private TextMeshProUGUI scoreText;
-    [SerializeField] private GameObject gameOverPanel, gamePanel,chooseScreen, StartR2;
+    [SerializeField] private GameObject gameOverPanel, gamePanel,chooseScreen, StartR2, R2End;
     [SerializeField] private TextMeshProUGUI questionText;
     [SerializeField] private List<Button> options;
     [SerializeField] private Color correctCol, wrongCol;
-    [SerializeField] public AudioClip questionAudio;
+    [SerializeField] public AudioClip questionAudio,endAudio;
 
     private Question question;
     private bool answered;
     private float audioLength;
     public TextMeshProUGUI ScoreText { get => scoreText; }
+    public BtnAnswerAudio BtnAnswerAudioPrefab { get => btnAnswerAudioPrefab; }
+    public RectTransform ScrollHoderEndR2 { get => chooseScreenContentR2; }
     public AudioManager AudioManager { get => audioManager; }
-    public GameObject GameOverPanel { get => gameOverPanel; }
-    // Start is called before the first frame update
+    public GameObject GmeOverPanel { get => gameOverPanel; }
+    public GameObject GamePanel { get => gamePanel; }
+    public GameObject R2EndObbject { get => R2End; }
+    public AudioClip EndAudio { get => endAudio; }
     private void Start()
     {
 
@@ -37,6 +42,10 @@ public class QuizUI : MonoBehaviour
     public void playAudioInfo()
     {
         AudioManager.playQuestionAu(questionAudio);
+    }
+    public void playEnd2()
+    {
+        AudioManager.playQuestionAu(endAudio);
     }
     public void loadSenceR1()
     {
@@ -129,9 +138,17 @@ public class QuizUI : MonoBehaviour
 
         }
     }
+    public void loadSence3()
+    {
+        SceneManager.LoadScene("Round3");
+    }
+    public void loadSenceStart()
+    {
+        SceneManager.LoadScene("StartGame");
+    }
     //void CreateCategoryButtons()
     //{
-        
+
     //    //we loop through all the available catgories in our QuizManager
     //        for (int i = 0; i < manager.Categories.Count; i++)
     //        { 
@@ -142,11 +159,25 @@ public class QuizUI : MonoBehaviour
     //            int index = i;
     //            //Add listner to button which calls CategoryBtn method
     //            categoryBtn.Btn.onClick.AddListener(() => CategoryBtn(index, manager.Categories[index].categoryName));
-                   
+
     //           //scrollHolder.sizeDelta = new Vector2(scrollHolder.sizeDelta.x, 20 * -i); 
     //    }
-       
-    //}
+
+    //}\
+
+    public void EndScreen()
+    {
+        gamePanel.SetActive(false);
+        R2EndObbject.SetActive(true);
+        QuizDataScriptable dataScriptable = manager.dataIndex();
+        for (int i=0; i< dataScriptable.questionsList.Count; i++)
+        {
+            BtnAnswerAudio btnAnswer = Instantiate(btnAnswerAudioPrefab, scrollHoderEndR2.transform);
+            btnAnswer.setOptionBtn(dataScriptable.questionsList[i].correctAns);
+            btnAnswer.Btn.onClick.AddListener(()=>{ AudioManager.playQuestionAu(dataScriptable.questionsList[i].correctAnsAudio); });
+            scrollHolder.sizeDelta = new Vector2(scrollHolder.sizeDelta.x, 20 * -i);
+        }
+    }
     private void ChooseBtn(int index, string option)
     {
 
