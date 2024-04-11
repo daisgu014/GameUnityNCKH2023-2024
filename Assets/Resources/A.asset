@@ -23,6 +23,7 @@ MonoBehaviour:
     - "R\u1EAFn"
     - "G\xE0"
     correctAns: "G\xE0"
+    correctAnsAudio: {fileID: 8300000, guid: 33156e0a125bcbe4ea3c373deb5b3922, type: 3}
   - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"a\""
     questionAudio: {fileID: 8300000, guid: 7cf6fb39ca9b70c4089caff6a2cda56d, type: 3}
     options:
@@ -31,6 +32,7 @@ MonoBehaviour:
     - Ba Ba
     - "Con Qu\u1EA1"
     correctAns: "Con Qu\u1EA1"
+    correctAnsAudio: {fileID: 8300000, guid: 7b9f7dc3f9f507845820170c30c63bab, type: 3}
   - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"a\""
     questionAudio: {fileID: 8300000, guid: 7cf6fb39ca9b70c4089caff6a2cda56d, type: 3}
     options:
@@ -39,11 +41,13 @@ MonoBehaviour:
     - "con Th\u1ECF"
     - "H\xE0 M\xE3"
     correctAns: "H\xE0 M\xE3"
+    correctAnsAudio: {fileID: 8300000, guid: a17e04bd90071664baa8d94ded298e70, type: 3}
   - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"a\""
     questionAudio: {fileID: 8300000, guid: 7cf6fb39ca9b70c4089caff6a2cda56d, type: 3}
     options:
     - "Con v\u1EB9t"
     - "Con c\xF4ng"
     - "Con h\u1ED5"
-    - Con nai
-    correctAns: Con nai
+    - Con Nai
+    correctAns: Con Nai
+    correctAnsAudio: {fileID: 8300000, guid: 03a0600cd1e638b498c9492a68ae806e, type: 3}
