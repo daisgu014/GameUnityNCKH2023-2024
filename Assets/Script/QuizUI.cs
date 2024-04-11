@@ -12,10 +12,11 @@ public class QuizUI : MonoBehaviour
     [SerializeField] QuizManager manager;
     [SerializeField] AudioManager audioManager;
     [SerializeField] private List<Image> lifeImageList;
-    [SerializeField] private RectTransform scrollHolder, chooseScreenContent;
+    [SerializeField] private RectTransform scrollHolder, chooseScreenContent, scrollHoderEndR2, chooseScreenContentR2;
     [SerializeField] private ChooseBtn chooseBtnPrefab;
+    [SerializeField] private BtnAnswerAudio btnAnswerAudioPrefab;
     [SerializeField] private TextMeshProUGUI scoreText;
-    [SerializeField] private GameObject gameOverPanel, gamePanel,chooseScreen, StartR2;
+    [SerializeField] private GameObject gameOverPanel, gamePanel,chooseScreen, StartR2, R2End;
     [SerializeField] private TextMeshProUGUI questionText;
     [SerializeField] private List<Button> options;
     [SerializeField] private Color correctCol, wrongCol;
@@ -147,6 +148,15 @@ public class QuizUI : MonoBehaviour
     //    }
        
     //}
+    public void EndScreen()
+    {
+        QuizDataScriptable dataScriptable = manager.dataIndex();
+        for (int i=0; i< dataScriptable.questionsList; i++)
+        {
+            BtnAnswerAudio btnAnswer = Instantiate(btnAnswerAudioPrefab, scrollHoderEndR2.transform);
+            btnAnswer.setButton(dataScriptable.questionsList[i].c);
+        }
+    }
     private void ChooseBtn(int index, string option)
     {
 

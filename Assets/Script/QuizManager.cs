@@ -60,21 +60,25 @@ public class QuizManager : MonoBehaviour
         gameScore = 0;
         quesitons = new List<Question>();
         dataScriptable = quizDataList[indexWord.Value];
-        for(int i = 0; i < dataScriptable.questionsList.Count; i++)
-            {
-                quesitons.Add(dataScriptable.questionsList[i]);
-            }
-      // Debug.Log(quesitons.Count);
+        for (int i = 0; i < dataScriptable.questionsList.Count; i++)
+        {
+            quesitons.Add(dataScriptable.questionsList[i]);
+        }
+        // Debug.Log(quesitons.Count);
         if (quesitons.Count > 0)
         {
-           SelectQuestion();
+            SelectQuestion();
         }
-       
+
         gameStatus = GameStatus.PLAYING;
 
 
     }
-    Question SelectQuestion()
+    public QuizDataScriptable dataIndex(){
+            return quizDataList[indexWord.Value];
+        }
+
+Question SelectQuestion()
     {
         
         int val = UnityEngine.Random.Range(0, quesitons.Count);
@@ -158,7 +162,8 @@ public class Question
     public string questionInfo;
     public AudioClip questionAudio;// câu hỏi
     public List<string> options; // danh sách câu trả lời
-    public string correctAns; // đáp án đúng
+    public string correctAns;// đáp án đúng
+    public AudioClip correctAnsAudio;
 
 }
 [System.Serializable]
