@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: A
   m_EditorClassIdentifier: 
   word: A
-  clip: {fileID: 32900000, guid: 22685c3ae01aa4f41b34d3cc08e49a74, type: 3}
-  texture: {fileID: 8400000, guid: 1171e01acc27f854799f30bfb43bbffd, type: 2}
+  clip: {fileID: 32900000, guid: 55c356ef0dada31469725fa0a89e4b5c, type: 3}
+  texture: {fileID: 8400000, guid: 18c1bd38396060a45ad0c32a37c07525, type: 2}
   uppercaseSound: {fileID: 8300000, guid: 003899c891a557547bc282549fe28d89, type: 3}
   chooseWordSound: {fileID: 8300000, guid: 003899c891a557547bc282549fe28d89, type: 3}
   lowercaseSound: {fileID: 8300000, guid: 701564f30a4ccba4a927b8c9630fbb21, type: 3}
