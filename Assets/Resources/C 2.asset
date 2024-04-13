@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: C
+  m_EditorClassIdentifier: 
+  chooseOption: C
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"C\"!"
+    questionAudio: {fileID: 8300000, guid: 8e05a933bc2b39f40968b6fcae54d7f7, type: 3}
+    options:
+    - "M\u1EF1c"
+    - "Sao bi\u1EC3n"
+    - "C\xE1"
+    - "B\u1EA1ch tu\u1ED9c"
+    correctAns: "C\xE1"
+    correctAnsAudio: {fileID: 8300000, guid: 08df5947e7d0c4d4eb92ffd26856c9a8, type: 3}
+  - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"C\"!"
+    questionAudio: {fileID: 8300000, guid: 8e05a933bc2b39f40968b6fcae54d7f7, type: 3}
+    options:
+    - Ba ba
+    - "Qu\u1EA1"
+    - "H\xE0 M\xE3"
+    - "C\xF4ng"
+    correctAns: "C\xF4ng"
+    correctAnsAudio: {fileID: 8300000, guid: 08a2dc534eaeaec4abc5dcfca2681d1d, type: 3}
+  - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"C\"!"
+    questionAudio: {fileID: 8300000, guid: 8e05a933bc2b39f40968b6fcae54d7f7, type: 3}
+    options:
+    - Nai
+    - "Th\u1ECF"
+    - "S\u01B0 t\u1EED"
+    - "C\u1EEBu"
+    correctAns: "C\u1EEBu"
+    correctAnsAudio: {fileID: 8300000, guid: 361971f6409c5574898c4043430ca285, type: 3}
+  - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"C\"!"
+    questionAudio: {fileID: 8300000, guid: 8e05a933bc2b39f40968b6fcae54d7f7, type: 3}
+    options:
+    - "B\xF2"
+    - "C\xE1o"
+    - "G\u1EA5u tr\xFAc"
+    - "S\u1EED t\u1EED"
+    correctAns: "C\xE1o"
+    correctAnsAudio: {fileID: 8300000, guid: 44599af34c8d8f94c9570008b264059a, type: 3}
