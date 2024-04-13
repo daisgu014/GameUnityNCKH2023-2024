@@ -14,5 +14,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chooseOption: "\xC2"
   color: {r: 0.12156863, g: 0.6901961, b: 0.06666667, a: 1}
-  categoriesList: []
-  questionsList: []
+  questionsList:
+  - questionInfo: "H\xE3y ch\u1ECDn \u0111\u1ED3  v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF
+      \"\xE2\"!"
+    questionAudio: {fileID: 8300000, guid: 2513972bcdf63f940812895c6843fba7, type: 3}
+    options:
+    - "Gi\xE0y"
+    - "D\xE2y"
+    - "M\u0169i t\xEAn"
+    - Cung
+    correctAns: "D\xE2y"
+    correctAnsAudio: {fileID: 8300000, guid: 6d31c548d355da748ab65673264a9113, type: 3}
+  - questionInfo: "H\xE3y ch\u1ECDn \u0111\u1ED3  v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF
+      \"\xE2\"!"
+    questionAudio: {fileID: 8300000, guid: 2513972bcdf63f940812895c6843fba7, type: 3}
+    options:
+    - "Gi\u1EA5y"
+    - "M\xE1y bay"
+    - "T\xEAn l\u1EEDa"
+    - "N\xF3n"
+    correctAns: "Gi\u1EA5y"
+    correctAnsAudio: {fileID: 8300000, guid: d6a5d272664e7eb45810d7cabe859182, type: 3}
+  - questionInfo: "H\xE3y ch\u1ECDn \u0111\u1ED3  v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF
+      \"\xE2\"!"
+    questionAudio: {fileID: 8300000, guid: 2513972bcdf63f940812895c6843fba7, type: 3}
+    options:
+    - "B\xE0n"
+    - "N\u0129a"
+    - "Ph\u1EA5n"
+    - "Kh\u0103n tay"
+    correctAns: "Ph\u1EA5n"
+    correctAnsAudio: {fileID: 8300000, guid: 09e4964ab888472408a50668d7b54a13, type: 3}
+  - questionInfo: "H\xE3y ch\u1ECDn \u0111\u1ED3  v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF
+      \"\xE2\"!"
+    questionAudio: {fileID: 8300000, guid: 2513972bcdf63f940812895c6843fba7, type: 3}
+    options:
+    - "M\xE0n h\xECnh"
+    - Loa
+    - "\u0110\u1ED3ng h\u1ED3"
+    - "T\u1EA5t"
+    correctAns: "T\u1EA5t"
+    correctAnsAudio: {fileID: 8300000, guid: 4f65242c388207d42bd0387ac9d8000f, type: 3}

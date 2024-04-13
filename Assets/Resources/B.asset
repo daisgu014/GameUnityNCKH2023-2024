@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: B
+  m_EditorClassIdentifier: 
+  chooseOption: B
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"B\"!"
+    questionAudio: {fileID: 8300000, guid: ab357e527268bd44c8b7a657f42dc870, type: 3}
+    options:
+    - "B\xF2"
+    - "Th\u1ECF"
+    - "R\u1EAFn"
+    - Nai
+    correctAns: "B\xF2"
+    correctAnsAudio: {fileID: 8300000, guid: 14ed171ebbfa8444eb3f1487a1d51efa, type: 3}
+  - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"B\"!"
+    questionAudio: {fileID: 8300000, guid: ab357e527268bd44c8b7a657f42dc870, type: 3}
+    options:
+    - "B\u01B0\u1EDBm"
+    - "S\u01B0 T\u1EED "
+    - "Ng\u1EF1a v\u1EB1n"
+    - "H\u1ED5"
+    correctAns: "B\u01B0\u1EDBm"
+    correctAnsAudio: {fileID: 8300000, guid: 55ac875252ad3fc488d140466c123aac, type: 3}
+  - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"B\"!"
+    questionAudio: {fileID: 8300000, guid: ab357e527268bd44c8b7a657f42dc870, type: 3}
+    options:
+    - 
+    - 
+    - 
+    - 
+    correctAns: "B\u1ECD"
+    correctAnsAudio: {fileID: 8300000, guid: 7d37fca1bf5ba4d4b95eb65c7a696e3f, type: 3}
+  - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"B\"!"
+    questionAudio: {fileID: 8300000, guid: ab357e527268bd44c8b7a657f42dc870, type: 3}
+    options:
+    - "H\u01B0\u01A1u cao c\u1ED5"
+    - "B\xE1o"
+    - "R\u1EAFn "
+    - "G\xE0"
+    correctAns: "B\xE1o"
+    correctAnsAudio: {fileID: 8300000, guid: 129d3947ecff86845a6b9370512c7168, type: 3}

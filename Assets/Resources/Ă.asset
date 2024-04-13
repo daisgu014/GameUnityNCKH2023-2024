@@ -16,18 +16,38 @@ MonoBehaviour:
   color: {r: 0.9339623, g: 0.6743133, b: 0.029957218, a: 1}
   questionsList:
   - questionInfo: "H\xE3y ch\u1ECDn \u0111\u1ED3 v\u1EADt c\xF3 ch\u1EEF \"\u0103\"!"
-    questionAudio: {fileID: 8300000, guid: d0bc2c9fb38dc8347884e4639fbc2248, type: 3}
-    options: []
-    correctAns: 
+    questionAudio: {fileID: 8300000, guid: 4b9314fe45da50b48942eacfde8c059d, type: 3}
+    options:
+    - "C\u1EB7p"
+    - "V\u1EDF"
+    - "Xe m\xE1y"
+    - "\xD4 t\xF4"
+    correctAns: "C\u1EB7p"
+    correctAnsAudio: {fileID: 8300000, guid: 3b7d974e727cc8a4aa9267ecf7afdabd, type: 3}
   - questionInfo: "H\xE3y ch\u1ECDn \u0111\u1ED3 v\u1EADt c\xF3 ch\u1EEF \"\u0103\"!"
-    questionAudio: {fileID: 8300000, guid: d0bc2c9fb38dc8347884e4639fbc2248, type: 3}
-    options: []
-    correctAns: "H\xE3y ch\u1ECDn \u0111\u1ED3 v\u1EADt c\xF3 ch\u1EEF \"\u0103\"!"
-  - questionInfo: 
-    questionAudio: {fileID: 8300000, guid: d0bc2c9fb38dc8347884e4639fbc2248, type: 3}
-    options: []
-    correctAns: 
-  - questionInfo: 
-    questionAudio: {fileID: 0}
-    options: []
-    correctAns: 
+    questionAudio: {fileID: 8300000, guid: 4b9314fe45da50b48942eacfde8c059d, type: 3}
+    options:
+    - "T\u0103m"
+    - "H\u0169"
+    - "B\xE0n"
+    - "gh\xEA"
+    correctAns: "T\u0103m"
+    correctAnsAudio: {fileID: 8300000, guid: 2237f346cd50d5e4e9fe780079231030, type: 3}
+  - questionInfo: "H\xE3y ch\u1ECDn \u0111\u1ED3 v\u1EADt c\xF3 ch\u1EEF \"\u0103\"!"
+    questionAudio: {fileID: 8300000, guid: 4b9314fe45da50b48942eacfde8c059d, type: 3}
+    options:
+    - "Kh\u1EA9u trang"
+    - "\u0110\u0169a"
+    - "Mu\u1ED7ng"
+    - "Kh\u0103n tay"
+    correctAns: "Kh\u0103n tay"
+    correctAnsAudio: {fileID: 8300000, guid: c8f74c1ec06dc184c9879abe3684baec, type: 3}
+  - questionInfo: "H\xE3y ch\u1ECDn \u0111\u1ED3 v\u1EADt c\xF3 ch\u1EEF \"\u0103\"!"
+    questionAudio: {fileID: 8300000, guid: 4b9314fe45da50b48942eacfde8c059d, type: 3}
+    options:
+    - "m\xE1y bay"
+    - "t\xE0u h\u1ECFa"
+    - "B\u0103ng g\u1EB7c"
+    - "nh\u1EABn"
+    correctAns: "B\u0103ng g\u1EA1c"
+    correctAnsAudio: {fileID: 8300000, guid: e1521391448d5b94abba182a7d5c0690, type: 3}
