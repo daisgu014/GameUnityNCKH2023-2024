@@ -36,10 +36,10 @@ MonoBehaviour:
   - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"B\"!"
     questionAudio: {fileID: 8300000, guid: ab357e527268bd44c8b7a657f42dc870, type: 3}
     options:
-    - 
-    - 
-    - 
-    - 
+    - "Ng\u1EF1a"
+    - "Tr\xE2u"
+    - "B\u1ECD"
+    - "D\xEA"
     correctAns: "B\u1ECD"
     correctAnsAudio: {fileID: 8300000, guid: 7d37fca1bf5ba4d4b95eb65c7a696e3f, type: 3}
   - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"B\"!"

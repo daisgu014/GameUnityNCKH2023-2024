@@ -46,8 +46,8 @@ MonoBehaviour:
     questionAudio: {fileID: 8300000, guid: 7cf6fb39ca9b70c4089caff6a2cda56d, type: 3}
     options:
     - "Con v\u1EB9t"
-    - "Con c\xF4ng"
-    - "Con h\u1ED5"
+    - "Con C\xF4ng"
+    - "Con H\u1ED5"
     - Con Nai
     correctAns: Con Nai
     correctAnsAudio: {fileID: 8300000, guid: 03a0600cd1e638b498c9492a68ae806e, type: 3}

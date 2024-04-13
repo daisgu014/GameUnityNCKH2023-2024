@@ -47,7 +47,7 @@ MonoBehaviour:
     options:
     - "m\xE1y bay"
     - "t\xE0u h\u1ECFa"
-    - "B\u0103ng g\u1EB7c"
+    - "B\u0103ng g\u1EA1c"
     - "nh\u1EABn"
     correctAns: "B\u0103ng g\u1EA1c"
     correctAnsAudio: {fileID: 8300000, guid: e1521391448d5b94abba182a7d5c0690, type: 3}
