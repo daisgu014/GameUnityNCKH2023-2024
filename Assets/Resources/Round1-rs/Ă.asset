@@ -15,8 +15,8 @@ MonoBehaviour:
   word: "\u0102"
   clip: {fileID: 32900000, guid: ffc4df8254ba4904ca19aa54fea187c3, type: 3}
   texture: {fileID: 8400000, guid: ad1f04f7cdf6da24eb7ac173ab2ef351, type: 2}
-  uppercaseSound: {fileID: 0}
-  chooseWordSound: {fileID: 0}
-  lowercaseSound: {fileID: 0}
-  chooseWordUpper: {fileID: 0}
-  chooseWordLower: {fileID: 0}
+  uppercaseSound: {fileID: 8300000, guid: c074ac11403a64643a4d1fac55ea6009, type: 3}
+  chooseWordSound: {fileID: 8300000, guid: ab156d5d0c7029c43b5dcf747bb28760, type: 3}
+  lowercaseSound: {fileID: 8300000, guid: 0e9a87d75bc61734da8650ab0530b1d4, type: 3}
+  chooseWordUpper: {fileID: 8300000, guid: f2883ff6062132641810adc266b868fe, type: 3}
+  chooseWordLower: {fileID: 8300000, guid: a56655003209de943a1b33e52f4774a6, type: 3}
