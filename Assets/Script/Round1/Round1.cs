@@ -16,7 +16,8 @@ public class Round1 : MonoBehaviour
 
     private Button next;
     private Button undo;
-    
+    private Button home;
+
     private Transform pn1; 
     private Transform pn2;
     private Transform pn3;
@@ -30,6 +31,7 @@ public class Round1 : MonoBehaviour
         setGameObject();
         btnNext();
         btnUndo();
+        btnHome();
         MouthShape();
         discWord();
         findWord();
@@ -49,6 +51,7 @@ public class Round1 : MonoBehaviour
     {
         next = gameObject.transform.GetChild(0).GetComponent<Button>();
         undo = gameObject.transform.GetChild(1).GetComponent<Button>();
+        home = gameObject.transform.GetChild(9).GetComponent<Button>();
         pn1 = gameObject.transform.GetChild(2);
         pn2 = gameObject.transform.GetChild(3);
         pn3 = gameObject.transform.GetChild(4);
@@ -344,6 +347,15 @@ public class Round1 : MonoBehaviour
                         break;
                 }
             });
+        }
+    }
+    void btnHome()
+    {
+        if (home != null) {
+            home.onClick.AddListener(() =>
+            {
+                SceneManager.LoadScene("StartGame");
+            });       
         }
     }
 }
