@@ -645,7 +645,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 513419207}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -2419,8 +2419,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1617856876}
   clickBtnAudio: {fileID: 8300000, guid: 58a900b8e4b357c42847a9b50264e269, type: 3}
-  CorrectAudio: {fileID: 8300000, guid: ae96f474f53a2d048b988041d03a2e54, type: 3}
-  wrongAudio: {fileID: 8300000, guid: aa7cdbbb7a958f943a82a3f3c0134488, type: 3}
+  CorrectAudio: {fileID: 8300000, guid: 97c37079ba2972246991bcbc5c9feda0, type: 3}
+  wrongAudio: {fileID: 8300000, guid: 0014cc9954a22424492dd35d3b605bc8, type: 3}
 --- !u!4 &1617856875
 Transform:
   m_ObjectHideFlags: 0
@@ -2992,9 +2992,7 @@ MonoBehaviour:
   lifeImageList: []
   scrollHolder: {fileID: 0}
   chooseScreenContent: {fileID: 904001438}
-  scrollHoderEndR2: {fileID: 0}
   chooseScreenContentR2: {fileID: 1289683322}
-  scrollHoderOptions: {fileID: 0}
   chooseScreenOptions: {fileID: 4869720348568339699}
   chooseBtnPrefab: {fileID: -7520082773625746577, guid: 3fd91c790ed5cb94580f60d32fac0671, type: 3}
   answerPrefab: {fileID: 2212128251191802156, guid: 80107c3d6cf6d9647bc2d16798b23da6, type: 3}
@@ -3006,15 +3004,10 @@ MonoBehaviour:
   StartR2: {fileID: 1570605649}
   R2End: {fileID: 914197872}
   questionText: {fileID: 828668003}
-  options:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   correctCol: {r: 0.17702027, g: 0.8018868, b: 0.23528597, a: 0.69411767}
   wrongCol: {r: 0.8666667, g: 0.22619872, b: 0.17647058, a: 0}
-  questionAudio: {fileID: 8300000, guid: 62253e55962eda74f8207b3fab8644ad, type: 3}
-  endAudio: {fileID: 8300000, guid: 6dfa468dd7644bd479efe7eec7cd6ead, type: 3}
+  questionAudio: {fileID: 8300000, guid: 3d870a61a12e2334ebf3990cb3f30683, type: 3}
+  endAudio: {fileID: 8300000, guid: 2782c92b078315d4ca5c6f015b94e283, type: 3}
 --- !u!81 &1854990489
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3056,10 +3049,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 526143709}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -631, y: -250}
-  m_SizeDelta: {x: 350, y: 500}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 400, y: 250}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943419582
 MonoBehaviour:
@@ -3081,7 +3074,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7b7cdc533aa461c4394c6cf63348a3a4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fefb1187e129a1b4f978af3d8e10e1ea, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3225,10 +3218,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3717766479304217095, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
       propertyPath: m_fontSize
-      value: 80
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3717766479304217095, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
       propertyPath: m_colorMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717766479304217095, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 7b10eb3f0ade49a44928a395e4c151fc, type: 2}
+    - target: {fileID: 3717766479304217095, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
+      propertyPath: m_fontStyle
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3717766479304217095, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
@@ -3245,11 +3246,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3717766479304217095, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
       propertyPath: m_fontSizeBase
-      value: 80
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 3717766479304217095, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
       propertyPath: m_fontColor32.rgba
       value: 4278979596
+      objectReference: {fileID: 0}
+    - target: {fileID: 3717766479304217095, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3717766479304217095, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
       propertyPath: m_fontColorGradient.topLeft.b
@@ -3306,7 +3311,7 @@ PrefabInstance:
     - target: {fileID: 4318698531252041138, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5ff45cdf885212f42b2e06ac2f2b8434, type: 3}
+      objectReference: {fileID: 21300000, guid: d913dcf2d851bd740aee967280d70acf, type: 3}
     - target: {fileID: 4318698531252041138, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
       propertyPath: m_Color.a
       value: 1

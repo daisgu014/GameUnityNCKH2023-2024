@@ -63,11 +63,9 @@ public class QuizManager : MonoBehaviour
 
 Question SelectQuestion()
     {
-        
         int val = UnityEngine.Random.Range(0, quesitons.Count);
         selectedQuestion = quesitons[val];
         currentQues = selectedQuestion;
-  
         quesitons.RemoveAt(val);
         quizUI.AudioManager.playQuestionAu(selectedQuestion.questionAudio);
         quizUI.setQuestion(selectedQuestion);
@@ -135,7 +133,9 @@ Question SelectQuestion()
             BtnAnswerAudio btnAnswer = Instantiate(quizUI.BtnAnswerAudioPrefab, quizUI.ScrollHoderEndR2.transform);
             btnAnswer.setOptionBtn(dataScriptable.questionsList[i].correctAns);
             int index = i;
-            btnAnswer.Btn.onClick.AddListener(() => { quizUI.AudioManager.playQuestionAu(dataScriptable.questionsList[index].correctAnsAudio); });
+            btnAnswer.Btn.onClick.AddListener(() => {
+                quizUI.StopAudio();
+                quizUI.AudioManager.playQuestionAu(dataScriptable.questionsList[index].correctAnsAudio); });
             quizUI.ScrollHoderEndR2.sizeDelta = new Vector2(quizUI.ScrollHoderEndR2.sizeDelta.x, 20 * -i);
         }
         PlayerPrefs.SetInt(currentCategory, correctAnswerCount); //save the score for this category

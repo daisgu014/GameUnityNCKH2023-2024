@@ -23,6 +23,7 @@ public class AudioManager : MonoBehaviour
 
     public void playAudio(bool answer)
     {
+        audioSource.Stop();
         if(answer)
         {
             audioSource.PlayOneShot(CorrectAudio);
