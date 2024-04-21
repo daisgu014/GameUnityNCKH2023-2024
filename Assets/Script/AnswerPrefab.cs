@@ -13,7 +13,11 @@ public class AnswerPrefab : MonoBehaviour
     public void setOptionBtn(string title, Sprite imagePath)
     {
         text.text = title;
-        image.sprite= imagePath;
+        if(imagePath != null)
+        {
+            image.sprite = imagePath;
+        }
+        
     }
 
 }
