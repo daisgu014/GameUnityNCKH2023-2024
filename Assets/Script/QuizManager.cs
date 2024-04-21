@@ -15,7 +15,6 @@ public class QuizManager : MonoBehaviour
     public IndexWord indexWord;
     private int currentInt;
     private Question currentQues = new Question();
-    //private List<Category> categories;
     private string currentCategory = "";
     private List<Question> quesitons;
     private int correctAnswerCount = 0;
@@ -34,25 +33,11 @@ public class QuizManager : MonoBehaviour
             return quizDataList;
         }
     }
-    //public List<Category> Categories
-    //{
-    //    get { return categories; }
-    //}
+   
     public string CurrentCategory
     {
         get { return currentCategory; }
     }
-    //public List<Category> StartChoose(int optionIndex, string option)
-    //{
-    //    CurrentOption = option;
-    //    currentInt = optionIndex;
-    //    categories = new List<Category>();
-    //    dataScriptable = quizDataList[optionIndex];
-    //    categories.AddRange(dataScriptable.categoriesList);
-    //    gameStatus = GameStatus.PLAYING;
-    //    return categories;
-
-    //}
     public void StartGame()
     {
         correctAnswerCount = 0;
@@ -63,7 +48,6 @@ public class QuizManager : MonoBehaviour
         {
             quesitons.Add(dataScriptable.questionsList[i]);
         }
-        // Debug.Log(quesitons.Count);
         if (quesitons.Count > 0)
         {
             SelectQuestion();
@@ -106,10 +90,8 @@ Question SelectQuestion()
 
     {
         bool correct = false;
-        //if selected answer is similar to the correctAns
         if (selectedQuestion.correctAns.ToLower() == answerd.ToLower())
         {
-            //Yes, Ans is correct
             correctAnswerCount++;
             correct = true;
             gameScore += 5;
@@ -118,7 +100,6 @@ Question SelectQuestion()
             {
                 if (quesitons.Count > 0)
                 {
-                    //call SelectQuestion method again after 1s
                     Invoke("SelectQuestion", 2);
 
                 }
@@ -130,11 +111,8 @@ Question SelectQuestion()
         }
         else
         {
-            //No, Ans is wrong
-            //Reduce Life
-            lifeRemaining--;
-            // quizUI.ReduceLife(lifeRemaining);
 
+            lifeRemaining--;
             selectQuestionAgian(currentQues);
             if (lifeRemaining == 0)
             {
@@ -142,8 +120,6 @@ Question SelectQuestion()
             }
         }
 
-       
-        //return the value of correct bool
         return correct;
     }
 
@@ -171,12 +147,18 @@ public class Question
     
     public string questionInfo;
     public AudioClip questionAudio;// câu hỏi
-    public List<string> options; // danh sách câu trả lời
+    public List<Answer> options; // danh sách câu trả lời
     public string correctAns;// đáp án đúng
     public AudioClip correctAnsAudio;
 
 }
 [System.Serializable]
+
+public class Answer
+{
+    public string text;
+    public Sprite imgPath;
+}
 
 //------------------------------------BỎ-----------------------------------------
 //public class Category

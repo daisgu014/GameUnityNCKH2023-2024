@@ -18,36 +18,9 @@ MonoBehaviour:
   - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"a\""
     questionAudio: {fileID: 8300000, guid: 7cf6fb39ca9b70c4089caff6a2cda56d, type: 3}
     options:
-    - "Kh\u1EC9"
-    - "M\xE8o"
-    - "R\u1EAFn"
-    - "G\xE0"
+    - text: A
+      imgPath: {fileID: 21300000, guid: e3d27923e7eac4ffeb8bd5a89e0f80f5, type: 3}
+    - text: "G\xE0"
+      imgPath: {fileID: 21300000, guid: 7b7cdc533aa461c4394c6cf63348a3a4, type: 3}
     correctAns: "G\xE0"
     correctAnsAudio: {fileID: 8300000, guid: 33156e0a125bcbe4ea3c373deb5b3922, type: 3}
-  - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"a\""
-    questionAudio: {fileID: 8300000, guid: 7cf6fb39ca9b70c4089caff6a2cda56d, type: 3}
-    options:
-    - "S\u01B0 t\u1EED"
-    - "C\xFA m\xE8o"
-    - "H\u1ED5"
-    - "Con Qu\u1EA1"
-    correctAns: "Con Qu\u1EA1"
-    correctAnsAudio: {fileID: 8300000, guid: 7b9f7dc3f9f507845820170c30c63bab, type: 3}
-  - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"a\""
-    questionAudio: {fileID: 8300000, guid: 7cf6fb39ca9b70c4089caff6a2cda56d, type: 3}
-    options:
-    - "Di\u1EC1u H\xE2u"
-    - "H\u01B0\u01A1u cao c\u1ED5"
-    - "con Th\u1ECF"
-    - "H\xE0 M\xE3"
-    correctAns: "H\xE0 M\xE3"
-    correctAnsAudio: {fileID: 8300000, guid: a17e04bd90071664baa8d94ded298e70, type: 3}
-  - questionInfo: "H\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"a\""
-    questionAudio: {fileID: 8300000, guid: 7cf6fb39ca9b70c4089caff6a2cda56d, type: 3}
-    options:
-    - "Con v\u1EB9t"
-    - "Con C\xF4ng"
-    - "Con H\u1ED5"
-    - Con Nai
-    correctAns: Con Nai
-    correctAnsAudio: {fileID: 8300000, guid: 03a0600cd1e638b498c9492a68ae806e, type: 3}
