@@ -12,8 +12,9 @@ public class QuizUI : MonoBehaviour
     [SerializeField] QuizManager manager;
     [SerializeField] AudioManager audioManager;
     [SerializeField] private List<Image> lifeImageList;
-    [SerializeField] private RectTransform scrollHolder, chooseScreenContent, scrollHoderEndR2, chooseScreenContentR2;
+    [SerializeField] private RectTransform scrollHolder, chooseScreenContent, scrollHoderEndR2, chooseScreenContentR2, scrollHoderOptions, chooseScreenOptions;
     [SerializeField] private ChooseBtn chooseBtnPrefab;
+    [SerializeField] private AnswerPrefab answerPrefab;
     [SerializeField] private BtnAnswerAudio btnAnswerAudioPrefab;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private GameObject gameOverPanel, gamePanel,chooseScreen, StartR2, R2End;
@@ -56,31 +57,15 @@ public class QuizUI : MonoBehaviour
         AudioManager.stopAudito();
         StartR2.SetActive(false);
         gamePanel.SetActive(true);
-        for (int i = 0; i < options.Count; i++)
-        {
-            Button localBtn = options[i];
-            localBtn.onClick.AddListener(() => {
-                OnClick(localBtn);
-            });
-        }
         manager.StartGame();
     }
 
     public void setQuestion(Question question)
     {
-        //questionCounter.text = $"0/{questions.Count.ToString()}";
         this.question = question;
         questionText.text = question.questionInfo;
-        List<string> ansOptions = SuffleList.ShuffleListItems<string>(question.options);
-
-        if (question.options.Count > 0)
-        {
-            for (int i = 0; i < options.Count; i++)
-            {
-                options[i].GetComponentInChildren<TextMeshProUGUI>().text = ansOptions[i];
-                options[i].name = ansOptions[i];
-            }
-        }
+        List<Answer> ansOptions = SuffleList.ShuffleListItems<Answer>(question.options);
+        setAnswerOption(ansOptions);
         answered = false;
 
 
@@ -176,6 +161,20 @@ public class QuizUI : MonoBehaviour
             btnAnswer.setOptionBtn(dataScriptable.questionsList[i].correctAns);
             btnAnswer.Btn.onClick.AddListener(()=>{ AudioManager.playQuestionAu(dataScriptable.questionsList[i].correctAnsAudio); });
             scrollHolder.sizeDelta = new Vector2(scrollHolder.sizeDelta.x, 20 * -i);
+        }
+    }
+    public void setAnswerOption(List<Answer> options)
+    {
+        for (int i =0; i< options.Count; i++)
+        {
+            AnswerPrefab answerOp = Instantiate(answerPrefab, chooseScreenOptions.transform);
+            answerOp.setOptionBtn(options[i].text, options[i].imgPath);
+            answerOp.Btn.name = options[i].text;
+            int index = i;
+            answerOp.Btn.onClick.AddListener(() => {
+                OnClick(answerOp.Btn);
+            });
+            chooseScreenOptions.sizeDelta = new Vector2(chooseScreenOptions.sizeDelta.x, 20 * -i);
         }
     }
     private void ChooseBtn(int index, string option)
