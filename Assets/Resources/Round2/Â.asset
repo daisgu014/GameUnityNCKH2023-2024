@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: "\xC2"
+  m_EditorClassIdentifier: 
+  chooseOption: "\xC2"
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"\xE2\"
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: a9a2464d6d1e57c43942147436002af3, type: 3}
+    options:
+    - text: "N\u1EA5m"
+      imgPath: {fileID: 21300000, guid: e44d10b9f5aa84d4189eb26236af3632, type: 3}
+    - text: "T\xE1o"
+      imgPath: {fileID: 21300000, guid: 2b5df45959f325144a862d644316d44e, type: 3}
+    correctAns: "N\u1EA5m"
+    correctAnsAudio: {fileID: 8300000, guid: d330798852a68154b806fa095101380b, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"\xE2\"
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: a9a2464d6d1e57c43942147436002af3, type: 3}
+    options:
+    - text: "D\xE2u t\xE2y"
+      imgPath: {fileID: 21300000, guid: f4d0c0858d0270b4181080d0108dd6ae, type: 3}
+    - text: "C\xE0 chua"
+      imgPath: {fileID: 21300000, guid: a3ec1ecca216a6f43a81d06a6627d8d9, type: 3}
+    correctAns: "D\xE2u t\xE2y"
+    correctAnsAudio: {fileID: 8300000, guid: 8cfcb28c343491e45a062b0a586fac64, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"\xE2\"
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 528bf20e6ce9240498ce5efe3bf53ba5, type: 3}
+    options:
+    - text: "Con m\xE8o"
+      imgPath: {fileID: 21300000, guid: 0e811dd9503ac164fbce1ed13375f2cb, type: 3}
+    - text: "Con tr\xE2u"
+      imgPath: {fileID: 21300000, guid: fafefcf3f602b144ca6db75cf0ab5b5b, type: 3}
+    correctAns: "Con tr\xE2u"
+    correctAnsAudio: {fileID: 8300000, guid: d2def47d5242008489dfc2b8d9271e00, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"\xE2\"
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 528bf20e6ce9240498ce5efe3bf53ba5, type: 3}
+    options:
+    - text: "Con ch\xF3"
+      imgPath: {fileID: 21300000, guid: ad15b1789d2313642b1c7c5d75fcf5d5, type: 3}
+    - text: "Con g\u1EA5u"
+      imgPath: {fileID: 21300000, guid: f420732c3434be944a311d71737e319a, type: 3}
+    correctAns: "Con g\u1EA5u"
+    correctAnsAudio: {fileID: 8300000, guid: 4b97c93d63aedee4bbf23dea6d593c32, type: 3}
