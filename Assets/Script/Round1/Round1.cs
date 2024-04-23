@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
+using Unity;
 public class Round1 : MonoBehaviour
 {
     [SerializeField] List<WordR1> words;
@@ -16,7 +17,8 @@ public class Round1 : MonoBehaviour
 
     private Button next;
     private Button undo;
-    
+    private Button home;
+
     private Transform pn1; 
     private Transform pn2;
     private Transform pn3;
@@ -30,12 +32,12 @@ public class Round1 : MonoBehaviour
         setGameObject();
         btnNext();
         btnUndo();
+        btnHome();
         MouthShape();
         discWord();
         findWord();
         findUppercase();
         findLowercase();
-        
         /*findWord();*/
     }
 
@@ -45,10 +47,28 @@ public class Round1 : MonoBehaviour
         btnPlayVideo();
         
     }
+    
+    public Color GetRandomColor()
+    {
+        Color[] colors = {
+            new Color(0.5f, 0.75f, 1.0f),
+            new Color(0.0f, 1.0f, 0.0f), // xanh
+            new Color(1.0f, 0.0f, 0.0f), // đỏ
+            new Color(1.0f, 1.0f, 0.0f), // vàng
+            new Color(1.0f, 0.5f, 0.0f), // cam
+            new Color(0.0f, 1.0f, 0.0f), // lục
+            new Color(1.0f, 1.0f, 1.0f),  // trắng
+            new Color(1.0f, 0.0f, 1.0f),  // hồng
+            new Color(0.0f, 0.5f, 1.0f)
+        };
+
+        return colors[UnityEngine.Random.Range(0, colors.Length)];
+    }
     void setGameObject()
     {
         next = gameObject.transform.GetChild(0).GetComponent<Button>();
         undo = gameObject.transform.GetChild(1).GetComponent<Button>();
+        home = gameObject.transform.GetChild(9).GetComponent<Button>();
         pn1 = gameObject.transform.GetChild(2);
         pn2 = gameObject.transform.GetChild(3);
         pn3 = gameObject.transform.GetChild(4);
@@ -63,13 +83,17 @@ public class Round1 : MonoBehaviour
         videoPn1.GetChild(1).GetComponent<VideoPlayer>().targetTexture = words[i].texture;
         videoPn1.GetChild(0).GetComponent<RawImage>().texture = words[i].texture;
         pn1.GetChild(2).GetComponent<TextMeshProUGUI>().text = words[i].word.ToUpper();
-        pn1.GetChild(3).GetComponent<TextMeshProUGUI>().text = words[i].word.ToLower();
+        pn1.GetChild(3).GetComponent<TextMeshProUGUI>().text = words[i].word.ToLower(); 
+        pn1.GetChild(2).GetComponent<TextMeshProUGUI>().color = GetRandomColor();
+        pn1.GetChild(3).GetComponent<TextMeshProUGUI>().color = GetRandomColor();
     }
     void discWord()
     {
         int i = index.Value;
         pn2.GetChild(0).GetComponent<TextMeshProUGUI>().text = words[i].word.ToUpper();
         pn2.GetChild(1).GetComponent<TextMeshProUGUI>().text = words[i].word.ToLower();
+        pn2.GetChild(0).GetComponent<TextMeshProUGUI>().color = GetRandomColor();
+        pn2.GetChild(1).GetComponent<TextMeshProUGUI>().color = GetRandomColor();
         Transform audioUp = pn2.GetChild(2);
         Transform audioLow = pn2.GetChild(3);
         audioUp.GetChild(2).GetComponent<AudioSource>().clip = words[i].uppercaseSound;
@@ -149,6 +173,8 @@ public class Round1 : MonoBehaviour
         Debug.Log(optionRest);
         pn4.GetChild(randomWord).GetChild(0).GetComponent<TextMeshProUGUI>().text = words[i].word.ToUpper();
         pn4.GetChild(optionRest).GetChild(0).GetComponent<TextMeshProUGUI>().text = words[i].word.ToLower();
+        pn4.GetChild(randomWord).GetChild(0).GetComponent<TextMeshProUGUI>().color = GetRandomColor(); 
+        pn4.GetChild(optionRest).GetChild(0).GetComponent<TextMeshProUGUI>().color = GetRandomColor();
         pn4.GetChild(randomWord).GetComponent<Button>().onClick.AddListener(() =>
         {
             btnSuccess();
@@ -175,6 +201,8 @@ public class Round1 : MonoBehaviour
         Debug.Log(optionRest);
         pn5.GetChild(randomWord).GetChild(0).GetComponent<TextMeshProUGUI>().text = words[i].word.ToUpper();
         pn5.GetChild(optionRest).GetChild(0).GetComponent<TextMeshProUGUI>().text = words[i].word.ToLower();
+        pn5.GetChild(randomWord).GetChild(0).GetComponent<TextMeshProUGUI>().color = GetRandomColor();
+        pn5.GetChild(optionRest).GetChild(0).GetComponent<TextMeshProUGUI>().color = GetRandomColor();
         pn5.GetChild(optionRest).GetComponent<Button>().onClick.AddListener(() =>
         {
             btnSuccess();
@@ -285,7 +313,7 @@ public class Round1 : MonoBehaviour
                 setActiveFalse();
                 switch (page)
                 {
-                    case 1:
+                    /*case 1:
                         undo.gameObject.SetActive(true);
                         pn2.gameObject.SetActive(true);
                         page++;
@@ -303,6 +331,22 @@ public class Round1 : MonoBehaviour
                         page++;
                         break;
                     case 5:
+                        SceneManager.LoadScene("SampleScene");
+                        break;*/
+                    case 1:
+                        undo.gameObject.SetActive(true);
+                        pn2.gameObject.SetActive(true);
+                        page++;
+                        break;
+                    case 2:
+                        pn4.gameObject.SetActive(true);
+                        page++;
+                        break;
+                    case 3:
+                        pn5.gameObject.SetActive(true);
+                        page++;
+                        break;
+                    case 4:
                         SceneManager.LoadScene("SampleScene");
                         break;
                     default:
@@ -322,7 +366,7 @@ public class Round1 : MonoBehaviour
                 setActiveFalse();
                 switch (page)
                 {
-                    case 2:
+                    /*case 2:
                         page--;
                         pn1.gameObject.SetActive(true);
                         undo.gameObject.SetActive(false);
@@ -339,11 +383,34 @@ public class Round1 : MonoBehaviour
                         page = 4;
                         pn4.gameObject.SetActive(true);
                         next.gameObject.SetActive(true);
+                        break;*/
+                    case 2:
+                        page--;
+                        pn1.gameObject.SetActive(true);
+                        undo.gameObject.SetActive(false);
+                        break;
+                    case 3:
+                        page--;
+                        pn2.gameObject.SetActive(true);
+                        break;
+                    case 4:
+                        page = 4;
+                        pn4.gameObject.SetActive(true);
+                        next.gameObject.SetActive(true);
                         break;
                     default:
                         break;
                 }
             });
+        }
+    }
+    void btnHome()
+    {
+        if (home != null) {
+            home.onClick.AddListener(() =>
+            {
+                SceneManager.LoadScene("StartGame");
+            });       
         }
     }
 }
