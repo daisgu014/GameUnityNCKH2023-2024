@@ -38,7 +38,6 @@ public class Round1 : MonoBehaviour
         findWord();
         findUppercase();
         findLowercase();
-        
         /*findWord();*/
     }
 
@@ -48,6 +47,7 @@ public class Round1 : MonoBehaviour
         btnPlayVideo();
         
     }
+    
     public Color GetRandomColor()
     {
         Color[] colors = {
