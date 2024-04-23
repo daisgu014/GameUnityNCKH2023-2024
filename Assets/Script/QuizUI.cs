@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using Unity.VisualScripting;
@@ -12,13 +12,13 @@ public class QuizUI : MonoBehaviour
     [SerializeField] QuizManager manager;
     [SerializeField] AudioManager audioManager;
     [SerializeField] private List<Image> lifeImageList;
-    [SerializeField] private RectTransform scrollHolder, chooseScreenContent, scrollHoderEndR2, chooseScreenContentR2;
+    [SerializeField] private RectTransform scrollHolder, chooseScreenContent, chooseScreenContentR2, chooseScreenOptions;
     [SerializeField] private ChooseBtn chooseBtnPrefab;
+    [SerializeField] private AnswerPrefab answerPrefab;
     [SerializeField] private BtnAnswerAudio btnAnswerAudioPrefab;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private GameObject gameOverPanel, gamePanel,chooseScreen, StartR2, R2End;
     [SerializeField] private TextMeshProUGUI questionText;
-    [SerializeField] private List<Button> options;
     [SerializeField] private Color correctCol, wrongCol;
     [SerializeField] public AudioClip questionAudio,endAudio;
 
@@ -30,6 +30,7 @@ public class QuizUI : MonoBehaviour
     public RectTransform ScrollHoderEndR2 { get => chooseScreenContentR2; }
     public AudioManager AudioManager { get => audioManager; }
     public GameObject GmeOverPanel { get => gameOverPanel; }
+    public RectTransform ChooseScreenOptions { get => chooseScreenOptions; }
     public GameObject GamePanel { get => gamePanel; }
     public GameObject R2EndObbject { get => R2End; }
     public AudioClip EndAudio { get => endAudio; }
@@ -56,31 +57,15 @@ public class QuizUI : MonoBehaviour
         AudioManager.stopAudito();
         StartR2.SetActive(false);
         gamePanel.SetActive(true);
-        for (int i = 0; i < options.Count; i++)
-        {
-            Button localBtn = options[i];
-            localBtn.onClick.AddListener(() => {
-                OnClick(localBtn);
-            });
-        }
         manager.StartGame();
     }
 
     public void setQuestion(Question question)
     {
-        //questionCounter.text = $"0/{questions.Count.ToString()}";
         this.question = question;
         questionText.text = question.questionInfo;
-        List<string> ansOptions = SuffleList.ShuffleListItems<string>(question.options);
-
-        if (question.options.Count > 0)
-        {
-            for (int i = 0; i < options.Count; i++)
-            {
-                options[i].GetComponentInChildren<TextMeshProUGUI>().text = ansOptions[i];
-                options[i].name = ansOptions[i];
-            }
-        }
+        List<Answer> ansOptions = SuffleList.ShuffleListItems<Answer>(question.options);
+        setAnswerOption(ansOptions);
         answered = false;
 
 
@@ -98,28 +83,19 @@ public class QuizUI : MonoBehaviour
 
         if (manager.GameStatus == GameStatus.PLAYING)
         {
-            //if answered is false
             if (!answered)
             {
-                //set answered true
                 answered = true;
-                //get the bool value
                 bool val = manager.Answer(btn.name);
-                
 
-                //if its true
                 if (val)
                 {
-                    //set color to correct
-                   
                     StartCoroutine(BlinkImg(btn.image));
                     audioManager.playAudio(true);
                     btn.image.color = correctCol;
                 }
                 else
                 {
-                    //else set it to wrong color
-                  
                     StartCoroutine(BlinkImg(btn.image));
                     audioManager.playAudio(false);
                     btn.image.color = Color.red;
@@ -146,36 +122,24 @@ public class QuizUI : MonoBehaviour
     {
         SceneManager.LoadScene("StartGame");
     }
-    //void CreateCategoryButtons()
-    //{
-
-    //    //we loop through all the available catgories in our QuizManager
-    //        for (int i = 0; i < manager.Categories.Count; i++)
-    //        { 
-    //        //Create new CategoryBtn
-    //            CategoryBtnScript categoryBtn = Instantiate(categoryBtnPrefab, scrollHolder.transform);
-    //        //Set the button default values
-    //        categoryBtn.SetButton(manager.Categories[i].categoryName, manager.Categories[i].imgPath);
-    //            int index = i;
-    //            //Add listner to button which calls CategoryBtn method
-    //            categoryBtn.Btn.onClick.AddListener(() => CategoryBtn(index, manager.Categories[index].categoryName));
-
-    //           //scrollHolder.sizeDelta = new Vector2(scrollHolder.sizeDelta.x, 20 * -i); 
-    //    }
-
-    //}\
-
-    public void EndScreen()
+    public void setAnswerOption(List<Answer> options)
     {
-        gamePanel.SetActive(false);
-        R2EndObbject.SetActive(true);
-        QuizDataScriptable dataScriptable = manager.dataIndex();
-        for (int i=0; i< dataScriptable.questionsList.Count; i++)
+       
+            foreach (Transform child in chooseScreenOptions.transform)
+            {
+                Destroy(child.gameObject);
+            }
+        
+        for (int i =0; i< options.Count; i++)
         {
-            BtnAnswerAudio btnAnswer = Instantiate(btnAnswerAudioPrefab, scrollHoderEndR2.transform);
-            btnAnswer.setOptionBtn(dataScriptable.questionsList[i].correctAns);
-            btnAnswer.Btn.onClick.AddListener(()=>{ AudioManager.playQuestionAu(dataScriptable.questionsList[i].correctAnsAudio); });
-            scrollHolder.sizeDelta = new Vector2(scrollHolder.sizeDelta.x, 20 * -i);
+            AnswerPrefab answerOp = Instantiate(answerPrefab, chooseScreenOptions.transform);
+            answerOp.setOptionBtn(options[i].text, options[i].imgPath);
+            answerOp.Btn.name = options[i].text;
+            int index = i;
+            answerOp.Btn.onClick.AddListener(() => {
+                OnClick(answerOp.Btn);
+            });
+            chooseScreenOptions.sizeDelta = new Vector2(chooseScreenOptions.sizeDelta.x, 20 * -i);
         }
     }
     private void ChooseBtn(int index, string option)
@@ -188,25 +152,26 @@ public class QuizUI : MonoBehaviour
 
 
     }
-    //private void CategoryBtn(int index, string category)
-    //{
-    //    audioManager.playBtnAudio();
-    //    manager.StartGame(index, category);
-    //    mainMenu.SetActive(false);
-    //    gamePanel.SetActive(true);
-    //}
-    // Update is called once per frame
     void Update()
     {
 
     }
     IEnumerator BlinkImg(Image img)
     {
-        for (int i = 0; i < 2; i++)
+        if (img != null && img.gameObject != null)
         {
-            img.color = Color.white;
-            yield return new WaitForSeconds(0.1f);
-            yield return new WaitForSeconds(0.1f);
+            for (int i = 0; i < 2; i++)
+            {
+                if (img != null) // Kiểm tra lại một lần nữa trước khi thay đổi màu sắc
+                {
+                    img.color = Color.white;
+                    yield return new WaitForSeconds(0.05f);
+                    if (img != null) // Kiểm tra lại một lần nữa trước khi thay đổi màu sắc
+                    {
+                        yield return new WaitForSeconds(0.05f);
+                    }
+                }
+            }
         }
     }
     public void RestryButton()
