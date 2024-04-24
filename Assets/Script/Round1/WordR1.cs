@@ -15,4 +15,5 @@ public class WordR1 : ScriptableObject
     public AudioClip lowercaseSound;
     public AudioClip chooseWordUpper;
     public AudioClip chooseWordLower;
+    public AudioClip introWord;
 }

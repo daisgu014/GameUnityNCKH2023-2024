@@ -15,8 +15,9 @@ MonoBehaviour:
   word: "\xC2"
   clip: {fileID: 32900000, guid: 1b5a59dd0f4808f47a9ab0139bcac3ea, type: 3}
   texture: {fileID: 8400000, guid: c3492d3b7ad917b40831ff4276ab3f9f, type: 2}
-  uppercaseSound: {fileID: 8300000, guid: 6084884751a1acb4f9ae16bac64fb868, type: 3}
+  uppercaseSound: {fileID: 8300000, guid: fe4cf13ecd530824191791e19ef9c00a, type: 3}
   chooseWordSound: {fileID: 8300000, guid: c226449c23ec38e49a748035c5666c41, type: 3}
-  lowercaseSound: {fileID: 8300000, guid: 249a7eb82b6b40e499cb08c3703d9c7a, type: 3}
-  chooseWordUpper: {fileID: 8300000, guid: 63d5a458be9c9ee4e84e019ad49566ea, type: 3}
-  chooseWordLower: {fileID: 8300000, guid: 12a52ee745150a44c90177a6a0ab427c, type: 3}
+  lowercaseSound: {fileID: 8300000, guid: 3e61fe8f2e3b1bb4c88b4261ef3b9f74, type: 3}
+  chooseWordUpper: {fileID: 8300000, guid: 0e693d916e39bbc4c8cf989a648c1d6b, type: 3}
+  chooseWordLower: {fileID: 8300000, guid: 14d6df3d8805d3a45a6b7382052cb44b, type: 3}
+  introWord: {fileID: 8300000, guid: cd1713cf03c895b4a942bd26a22fd44c, type: 3}
