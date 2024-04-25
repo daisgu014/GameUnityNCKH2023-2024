@@ -57,7 +57,6 @@ public class Round1 : MonoBehaviour
             new Color(1.0f, 1.0f, 0.0f), // vàng
             new Color(1.0f, 0.5f, 0.0f), // cam
             new Color(0.0f, 1.0f, 0.0f), // lục
-            new Color(1.0f, 1.0f, 1.0f),  // trắng
             new Color(1.0f, 0.0f, 1.0f),  // hồng
             new Color(0.0f, 0.5f, 1.0f)
         };
@@ -79,13 +78,15 @@ public class Round1 : MonoBehaviour
     {
         int i = index.Value;
         Transform videoPn1 = pn1.GetChild(0);
-        videoPn1.GetChild(1).GetComponent<VideoPlayer>().clip = words[i].clip;
+        /*videoPn1.GetChild(1).GetComponent<VideoPlayer>().clip = words[i].clip;
         videoPn1.GetChild(1).GetComponent<VideoPlayer>().targetTexture = words[i].texture;
-        videoPn1.GetChild(0).GetComponent<RawImage>().texture = words[i].texture;
+        videoPn1.GetChild(0).GetComponent<RawImage>().texture = words[i].texture;*/
         pn1.GetChild(2).GetComponent<TextMeshProUGUI>().text = words[i].word.ToUpper();
         pn1.GetChild(3).GetComponent<TextMeshProUGUI>().text = words[i].word.ToLower(); 
         pn1.GetChild(2).GetComponent<TextMeshProUGUI>().color = GetRandomColor();
         pn1.GetChild(3).GetComponent<TextMeshProUGUI>().color = GetRandomColor();
+        pn1.GetChild(5).GetComponent<AudioSource>().clip = words[i].introWord;
+        pn1.GetChild(5).GetComponent<AudioSource>().Play();
     }
     void discWord()
     {
@@ -245,12 +246,14 @@ public class Round1 : MonoBehaviour
         Transform play = pn1.GetChild(1).GetChild(0);
         Transform pause = pn1.GetChild(1).GetChild(1);
         Transform video = pn1.GetChild(0).GetChild(1);
+        Transform audio = pn1.GetChild(5);
         if (pause.GetComponent<Button>() != null)
         {
             pause.GetComponent<Button>().onClick.AddListener(
                 () =>
                 {
-                    video.GetComponent<VideoPlayer>().Pause();
+                    /*video.GetComponent<VideoPlayer>().Pause();*/
+                    audio.GetComponent<AudioSource>().Pause();
                     pause.GetComponent<Button>().gameObject.SetActive(false);
                     play.GetComponent<Button>().gameObject.SetActive(true);
                 }
@@ -262,12 +265,14 @@ public class Round1 : MonoBehaviour
         Transform play = pn1.GetChild(1).GetChild(0);
         Transform pause = pn1.GetChild(1).GetChild(1);
         Transform video = pn1.GetChild(0).GetChild(1);
+        Transform audio = pn1.GetChild(5);
         if (play.GetComponent<Button>() != null)
         {
             play.GetComponent<Button>().onClick.AddListener(
                 () =>
                 {
-                    video.GetComponent<VideoPlayer>().Play();
+                    /*video.GetComponent<VideoPlayer>().Play();*/
+                    audio.GetComponent<AudioSource>().Play();
                     play.GetComponent<Button>().gameObject.SetActive(false);
                     pause.GetComponent<Button>().gameObject.SetActive(true);
                 }

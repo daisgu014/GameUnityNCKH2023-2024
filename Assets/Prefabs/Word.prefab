@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7b10eb3f0ade49a44928a395e4c151fc, type: 2}
+  m_sharedMaterial: {fileID: -7977214299006700248, guid: 7b10eb3f0ade49a44928a395e4c151fc, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &2720709427764375565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,11 +339,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62abda01dd9c64303b06953667cfaf58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wordGO: {fileID: 3755382427308931212}
-  filePath: 
-  word: Bo
+  current: {fileID: 0}
   renderer: {fileID: 8025230834702323095}
-  text: {fileID: 1867719138520208342}
+  textRender: {fileID: 0}
+  audioSource: {fileID: 0}
+  correctAudio: {fileID: 0}
+  incorrectAudio: {fileID: 0}
 --- !u!222 &6075802153170463580
 CanvasRenderer:
   m_ObjectHideFlags: 0
