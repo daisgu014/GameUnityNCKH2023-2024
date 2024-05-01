@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e050b789a448d46c6ba4ffb07a9f6ac6, type: 3}
+  m_Name: r3_a2_w2
+  m_EditorClassIdentifier: 
+  word: "B\u1EE9c tranh"
+  img: {fileID: 21300000, guid: b503ff366a9da4bf2baf8e35f4371388, type: 3}
+  isCorrect: 0
+  wordVoice: {fileID: 8300000, guid: 8a1b9bdf9eef541f99ab0a50b40990f4, type: 3}
+  X: 4.9
+  Y: -3

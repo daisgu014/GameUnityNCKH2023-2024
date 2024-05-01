@@ -11,6 +11,9 @@ public class Round3 : MonoBehaviour
     [SerializeField] private GameObject wordGO;
     [SerializeField] private GameObject wordHolder;
     [SerializeField] private AudioSource voiceControl;
+    [SerializeField] private AudioClip startVoice;
+    [SerializeField] private AudioClip endVoice;
+    [SerializeField] private Sprite endImage;
     private List<WordData> words;
     private CharacterData currentCharacter;
     public IndexWord indexWord;
@@ -18,6 +21,7 @@ public class Round3 : MonoBehaviour
     private HashSet<string> currentChoice;
 
     public HashSet<string> CurrentChoice { get => currentChoice; set => currentChoice = value; }
+    public AudioSource VoiceControl { get => voiceControl; set => voiceControl = value; }
 
 
     // Start is called before the first frame update
@@ -25,27 +29,38 @@ public class Round3 : MonoBehaviour
     {
         CurrentChoice = new HashSet<string>();
         currentCharacter = data.GetCharacter(indexWord.Value);
-        voiceControl.PlayDelayed((float)0.5);
-        voiceControl.PlayOneShot(clip: currentCharacter.IntroVoice);
-        StartCoroutine(WaitForSound(currentCharacter.IntroVoice));
-        Debug.Log(indexWord.Value);
-        words = currentCharacter.GetWords();
-        bgImage = currentCharacter.getBackgroundImage();
-        renderBackground();
+        VoiceControl.PlayDelayed((float)0.5);
+        VoiceControl.PlayOneShot(clip: startVoice);
+        StartCoroutine(WaitForStart(startVoice));
 
     }
 
-    private IEnumerator WaitForSound(AudioClip Sound)
+    private IEnumerator WaitForStart(AudioClip Sound)
     {
-        yield return new WaitUntil(() => voiceControl.isPlaying == false);
-        // or yield return new WaitWhile(() => audiosource.isPlaying == true);
+        yield return new WaitUntil(() => VoiceControl.isPlaying == false);
+        start();
+    }
+
+    private void start()
+    {
+        bgImage = currentCharacter.getBackgroundImage();
+        renderBackground();
+        VoiceControl.PlayDelayed((float)0.5);
+        VoiceControl.PlayOneShot(clip: currentCharacter.IntroVoice);
+        StartCoroutine(WaitForIntro(currentCharacter.IntroVoice));
+    }
+
+    private IEnumerator WaitForIntro(AudioClip Sound)
+    {
+        yield return new WaitUntil(() => VoiceControl.isPlaying == false);
         play();
     }
 
 
-
     private void play()
     {
+        
+        words = currentCharacter.GetWords();
         wordHolder.SetActive(true);
         renderWordList();
     }
@@ -78,9 +93,25 @@ public class Round3 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentChoice.Count >= currentCharacter.Required)
+        
+    }
+
+    public void CheckEndGame(AudioSource source)
+    {
+        if (currentChoice.Count >= currentCharacter.Required)
         {
-            SceneManager.LoadScene("CharBoard");
+            StartCoroutine(WaitForEnd(source));
         }
+    }
+
+    private IEnumerator WaitForEnd(AudioSource source)
+    {
+        yield return new WaitUntil(() => source.isPlaying == false);
+        wordHolder.SetActive(false);
+        VoiceControl.PlayDelayed((float)0.5);
+        VoiceControl.PlayOneShot(clip: endVoice);
+        gameObject.GetComponent<SpriteRenderer>().sprite = endImage;
+        yield return new WaitUntil(() => VoiceControl.isPlaying == false);
+        SceneManager.LoadScene("CharBoard");
     }
 }
