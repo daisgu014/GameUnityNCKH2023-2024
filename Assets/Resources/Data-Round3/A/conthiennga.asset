@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e050b789a448d46c6ba4ffb07a9f6ac6, type: 3}
   m_Name: conthiennga
   m_EditorClassIdentifier: 
-  word: "Thi\xEAn Nga"
+  word: "Thi\xEAn nga"
   img: {fileID: 21300000, guid: 18b041d93bd87486f824bbc87cc36a45, type: 3}
   isCorrect: 1
   wordVoice: {fileID: 8300000, guid: 3f989e6a2b370487a99d711f6c6f5030, type: 3}

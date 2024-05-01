@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e050b789a448d46c6ba4ffb07a9f6ac6, type: 3}
   m_Name: conho
   m_EditorClassIdentifier: 
-  word: "Con H\u1ED5"
+  word: "Con h\u1ED5"
   img: {fileID: 21300000, guid: 40142aa5a2a6f40cc8d1739ce6b38df1, type: 3}
   isCorrect: 0
-  wordVoice: {fileID: 8300000, guid: 70373f6a6fd0046e785634246709ad8a, type: 3}
+  wordVoice: {fileID: 8300000, guid: a1e00e9b8e13e478a8a324f79aa6f96e, type: 3}
   X: 1
   Y: 2
