@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c3917349ddd4d4abe471b354877d09, type: 3}
+  m_Name: "\xD4"
+  m_EditorClassIdentifier: 
+  word: "\xD4"
+  clip: {fileID: 0}
+  texture: {fileID: 0}
+  uppercaseSound: {fileID: 8300000, guid: 34ad71f7e005de1499809f7ff827e9c8, type: 3}
+  chooseWordSound: {fileID: 0}
+  lowercaseSound: {fileID: 8300000, guid: 5e622546cfe014f4fbc41417255a5a51, type: 3}
+  chooseWordUpper: {fileID: 8300000, guid: 56a568c2819891c4cb03cd8a7410c5a4, type: 3}
+  chooseWordLower: {fileID: 8300000, guid: a45df439d9af941448ccaea2e45b8b45, type: 3}
+  introWord: {fileID: 8300000, guid: 6166a5e0eb29fa842b5c5ae02b2a8657, type: 3}

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c3917349ddd4d4abe471b354877d09, type: 3}
+  m_Name: H
+  m_EditorClassIdentifier: 
+  word: H
+  clip: {fileID: 0}
+  texture: {fileID: 0}
+  uppercaseSound: {fileID: 8300000, guid: 2c8a3a5c0b7584447b912feabc91ea46, type: 3}
+  chooseWordSound: {fileID: 0}
+  lowercaseSound: {fileID: 8300000, guid: 949655e6c3f5c134194424ab5b1b7a6f, type: 3}
+  chooseWordUpper: {fileID: 8300000, guid: 46d9c5b2a805e074f81b4f8c4c335dfd, type: 3}
+  chooseWordLower: {fileID: 8300000, guid: 7a7c5ca1f811f204eb152390aab319a0, type: 3}
+  introWord: {fileID: 8300000, guid: 75f79502a0d4a8c478a730bf5ec5e87a, type: 3}

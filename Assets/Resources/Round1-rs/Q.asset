@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c3917349ddd4d4abe471b354877d09, type: 3}
+  m_Name: Q
+  m_EditorClassIdentifier: 
+  word: Q
+  clip: {fileID: 0}
+  texture: {fileID: 0}
+  uppercaseSound: {fileID: 8300000, guid: 1893da14e0acf1644a3d0543ce25d7b7, type: 3}
+  chooseWordSound: {fileID: 0}
+  lowercaseSound: {fileID: 8300000, guid: a51536d34a671574fb5682a725df90a5, type: 3}
+  chooseWordUpper: {fileID: 8300000, guid: 59e99af3405c66747b3a455eda4c7791, type: 3}
+  chooseWordLower: {fileID: 8300000, guid: f42c911e775efe14386d0b2a113baaac, type: 3}
+  introWord: {fileID: 8300000, guid: afc104edb045c604da95d1b1bdbe5c47, type: 3}
