@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: v
+  m_EditorClassIdentifier: 
+  chooseOption: v
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cv\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 65c1ce3706ca38a4faa52ce0a77c5202, type: 3}
+    options:
+    - text: "C\xE1i cbai"
+      imgPath: {fileID: 21300000, guid: 24d59705416b6924f977dd814e5c8e0a, type: 3}
+    - text: "V\xED ti\u1EC1n"
+      imgPath: {fileID: 21300000, guid: 9be2dce46a737864198b76fe8b371ec3, type: 3}
+    correctAns: "V\xED ti\u1EC1n"
+    correctAnsAudio: {fileID: 8300000, guid: 4ee6a5e11db3b48478dc5bdda465307a, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cv\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 65c1ce3706ca38a4faa52ce0a77c5202, type: 3}
+    options:
+    - text: "M\u1EB7t tr\u1EDDi"
+      imgPath: {fileID: 21300000, guid: 6e2a66a38eab516458340019c20755e0, type: 3}
+    - text: "C\u1EA7u v\u1ED3ng"
+      imgPath: {fileID: 21300000, guid: 279994a7bbf9d44408310db79f5a57e7, type: 3}
+    correctAns: "C\u1EA7u v\u1ED3ng"
+    correctAnsAudio: {fileID: 8300000, guid: 4bbe753292e6f224e87195aa4eef07d0, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cv\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 65c1ce3706ca38a4faa52ce0a77c5202, type: 3}
+    options:
+    - text: "G\u1EA5u b\xF4ng"
+      imgPath: {fileID: 21300000, guid: 6e0ac5df403775641a9e4158746a1d93, type: 3}
+    - text: "\u0110\xF4i v\u1EDB"
+      imgPath: {fileID: 21300000, guid: 630f417639fa2554891fff35d6edc078, type: 3}
+    correctAns: "\u0110\xF4i v\u1EDB"
+    correctAnsAudio: {fileID: 8300000, guid: 48c4ae15d8d0359479db61b7f2458e3a, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cv\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 65c1ce3706ca38a4faa52ce0a77c5202, type: 3}
+    options:
+    - text: "H\u1ED9p b\xFAt"
+      imgPath: {fileID: 21300000, guid: 0762731e45068d74da274243a3a1f4c1, type: 3}
+    - text: "Quy\u1EC3n v\u1EDF"
+      imgPath: {fileID: 21300000, guid: 4b6d83e028866d84bad2643d2150e00f, type: 3}
+    correctAns: "Quy\u1EC3n v\u1EDF"
+    correctAnsAudio: {fileID: 8300000, guid: 82780d3986a4f0d42b72254907016adb, type: 3}

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: L
+  m_EditorClassIdentifier: 
+  chooseOption: L
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cl\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 3a4b269722c6f8549952c37f4c099488, type: 3}
+    options:
+    - text: "Con l\u1EA1c \u0111\xE0"
+      imgPath: {fileID: 21300000, guid: cce4737c6bab7d649937b7cee40e5eff, type: 3}
+    - text: "Con s\u01B0 t\u1EED"
+      imgPath: {fileID: 21300000, guid: 721c4e6cfb69a764a9a54d3c932c43cc, type: 3}
+    correctAns: "Con l\u1EA1c \u0111\xE0"
+    correctAnsAudio: {fileID: 8300000, guid: e077bdd45310353409bab058a39a8aa9, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cl\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 8b423cec8fd722d45a3bbdbf17317f5d, type: 3}
+    options:
+    - text: "C\xE2y d\u1EEBa"
+      imgPath: {fileID: 21300000, guid: 8ffe7ee7819047347bb352772013d9ab, type: 3}
+    - text: "C\xE2y l\xFAa"
+      imgPath: {fileID: 21300000, guid: 65fa84ec10705f44fb8bff111e0a41d0, type: 3}
+    correctAns: "C\xE2y l\xFAa"
+    correctAnsAudio: {fileID: 8300000, guid: c4e915bdcd54656449732c593075d2d7, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cl\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 8b423cec8fd722d45a3bbdbf17317f5d, type: 3}
+    options:
+    - text: "Tr\xE1i l\u1EF1u"
+      imgPath: {fileID: 21300000, guid: 7574c0dc494a8ff46808ebd65cb5011d, type: 3}
+    - text: "Tr\xE1i t\xE1o"
+      imgPath: {fileID: 21300000, guid: 99479e44d044a6c4c92b5e4fec127089, type: 3}
+    correctAns: "Tr\xE1i l\u1EF1u"
+    correctAnsAudio: {fileID: 8300000, guid: 141747743eaec1948b98059650f465dd, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cl\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 8b423cec8fd722d45a3bbdbf17317f5d, type: 3}
+    options:
+    - text: "Tr\xE1i chanh"
+      imgPath: {fileID: 21300000, guid: ed3a3c31949781a4494db21c11cbd03d, type: 3}
+    - text: "Tr\xE1i l\xEA"
+      imgPath: {fileID: 21300000, guid: a1beb53f66c85d04d83b200ccb01173a, type: 3}
+    correctAns: "Tr\xE1i l\xEA"
+    correctAnsAudio: {fileID: 8300000, guid: 62c14ded4efc26c4fa8b9d5c09a5b22c, type: 3}

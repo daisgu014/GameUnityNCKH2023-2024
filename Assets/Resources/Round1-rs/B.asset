@@ -18,6 +18,6 @@ MonoBehaviour:
   uppercaseSound: {fileID: 8300000, guid: 228f786aeb988034d89b4243bd7e4954, type: 3}
   chooseWordSound: {fileID: 8300000, guid: 511448761a54fea4687d95368e29e8f8, type: 3}
   lowercaseSound: {fileID: 8300000, guid: e69c7164baabbfa4ca3ff24631e9dc82, type: 3}
-  chooseWordUpper: {fileID: 8300000, guid: aa64e0fbeb21c804a82687b72bfd6da6, type: 3}
+  chooseWordUpper: {fileID: 8300000, guid: bb33d902fa1170c4e9a47d6d79b3c450, type: 3}
   chooseWordLower: {fileID: 8300000, guid: aa64e0fbeb21c804a82687b72bfd6da6, type: 3}
   introWord: {fileID: 8300000, guid: 196d60fa19b798d438b629aa127fc49c, type: 3}

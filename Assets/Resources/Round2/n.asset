@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: n
+  m_EditorClassIdentifier: 
+  chooseOption: n
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cn\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 114778fdcec717c4380aa4fd16f3af88, type: 3}
+    options:
+    - text: Con nai
+      imgPath: {fileID: 21300000, guid: 610d90dbde4e7b849bd40db0ea03e7d7, type: 3}
+    - text: "Con s\xF3c"
+      imgPath: {fileID: 21300000, guid: c5a71db7d82fc974aac82cafbbeb5a30, type: 3}
+    correctAns: Con nai
+    correctAnsAudio: {fileID: 8300000, guid: 82e7f0f36c2482d45a4f7fad2975300b, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cn\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 2c89757ef9dec154489ab6e77c5aadcf, type: 3}
+    options:
+    - text: "C\xE2y n\u1EA5m"
+      imgPath: {fileID: 21300000, guid: 318a5d1146a46134aab84a7ae16e2ceb, type: 3}
+    - text: "C\xE0 r\u1ED1t"
+      imgPath: {fileID: 21300000, guid: bb1c156cabaab7b4e97953dbf2c8121a, type: 3}
+    correctAns: "C\xE2y n\u1EA5m"
+    correctAnsAudio: {fileID: 8300000, guid: 52de24ae1d55c99489fb75d214030212, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cn\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 2c89757ef9dec154489ab6e77c5aadcf, type: 3}
+    options:
+    - text: "B\u1EA7u tr\u1EDDi"
+      imgPath: {fileID: 21300000, guid: 91a1f491d4b4be24796cbbfbc21b0894, type: 3}
+    - text: "Ng\u1ECDn n\xFAi"
+      imgPath: {fileID: 21300000, guid: 719502725ebc17f4584b16594c3d5bcb, type: 3}
+    correctAns: "Ng\u1ECDn n\xFAi"
+    correctAnsAudio: {fileID: 8300000, guid: 893d826083f08a54a83756013916b15e, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cn\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 0}
+    options:
+    - text: "Gi\u1ECDt n\u01B0\u1EDBc"
+      imgPath: {fileID: 21300000, guid: ab1e5346e81e2c1419acb9ca9745cbac, type: 3}
+    - text: "\u0110\xE1m m\xE2y"
+      imgPath: {fileID: 21300000, guid: f2e0a54669615444d9acb8ed32400a70, type: 3}
+    correctAns: "Gi\u1ECDt n\u01B0\u1EDBc"
+    correctAnsAudio: {fileID: 8300000, guid: 1009bfa7e08bbd246b0b3d284dff4b6c, type: 3}
