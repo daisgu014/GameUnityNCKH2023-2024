@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: s
+  m_EditorClassIdentifier: 
+  chooseOption: s
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cs\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: c54346e7b184e3c43a47781465f4d729, type: 3}
+    options:
+    - text: Hoa sen
+      imgPath: {fileID: 21300000, guid: a793428315f947942aba5fb001629e1e, type: 3}
+    - text: "Hoa \u0111\xE0o"
+      imgPath: {fileID: 21300000, guid: 808bb75fc628e914aa533ee226653019, type: 3}
+    correctAns: Hoa sen
+    correctAnsAudio: {fileID: 8300000, guid: 080ef4e468a79ae4da8e00cccc66662e, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cs\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: c54346e7b184e3c43a47781465f4d729, type: 3}
+    options:
+    - text: "Tr\xE1i s\u1EA7u ri\xEAng"
+      imgPath: {fileID: 21300000, guid: 6ae09ab982632f84ab70bbda29b08d05, type: 3}
+    - text: "Tr\xE1i \u0111u \u0111\u1EE7"
+      imgPath: {fileID: 21300000, guid: 801693f1c03d0804cb591a5e975268f4, type: 3}
+    correctAns: "Tr\xE1i s\u1EA7u ri\xEAng"
+    correctAnsAudio: {fileID: 8300000, guid: 971c55ed8534c0c4995c07b6bccc29a2, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cs\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: c54346e7b184e3c43a47781465f4d729, type: 3}
+    options:
+    - text: "Ng\xF4i sao"
+      imgPath: {fileID: 21300000, guid: 89f00744d5b5f63439022c29f124500d, type: 3}
+    - text: "C\u1EA7u v\u1ED3ng"
+      imgPath: {fileID: 21300000, guid: 933cc462583f4d14997f5af1b6ec1a5c, type: 3}
+    correctAns: "Ng\xF4i sao"
+    correctAnsAudio: {fileID: 8300000, guid: d4b5de53bc0245a428c98ced29282f13, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cs\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: c54346e7b184e3c43a47781465f4d729, type: 3}
+    options:
+    - text: "Gi\u1ECDt n\u01B0\u1EDBc"
+      imgPath: {fileID: 21300000, guid: 3506a1b96e6ed094a8a95e3682ee986f, type: 3}
+    - text: "Vi\xEAn s\u1ECFi"
+      imgPath: {fileID: 21300000, guid: 1e969623b3e429f4db8dea5fc8b2b26d, type: 3}
+    correctAns: "Vi\xEAn s\u1ECFi"
+    correctAnsAudio: {fileID: 8300000, guid: 7fb145a66559edf4e96c476e6c0eb248, type: 3}

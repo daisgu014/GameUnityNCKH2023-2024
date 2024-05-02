@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: r
+  m_EditorClassIdentifier: 
+  chooseOption: r
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cr\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 154d316ff351cd842aa47c45e4848867, type: 3}
+    options:
+    - text: "Con r\u1EAFn"
+      imgPath: {fileID: 21300000, guid: 15019d252fdba064f932ce6f3550a628, type: 3}
+    - text: "Con \u1EBFch"
+      imgPath: {fileID: 21300000, guid: 07aef4fb7af83c64481b49d42b9c4da0, type: 3}
+    correctAns: "Con r\u1EAFn"
+    correctAnsAudio: {fileID: 8300000, guid: e81712802a3d6f04fb1d2acac65d561a, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cr\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 154d316ff351cd842aa47c45e4848867, type: 3}
+    options:
+    - text: "Con r\xF9a"
+      imgPath: {fileID: 21300000, guid: 12f2b794dbe496c4083829198f9b1e39, type: 3}
+    - text: "Con v\u1ECBt"
+      imgPath: {fileID: 21300000, guid: 22fb2996781e0f7488bf3a66a81d5a96, type: 3}
+    correctAns: "Con r\xF9a"
+    correctAnsAudio: {fileID: 8300000, guid: d93ef0234e0d4bd4994e42ce8380d020, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cr\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 6841b803c468b2548adf6108e41afed9, type: 3}
+    options:
+    - text: "H\xE0m r\u0103ng"
+      imgPath: {fileID: 21300000, guid: eb43f29eb6fbbe044ab86c97cacbfffa, type: 3}
+    - text: "\u0110\xF4i m\u1EAFt"
+      imgPath: {fileID: 21300000, guid: ecc2b30ed03a4884989d66014f4535fa, type: 3}
+    correctAns: "H\xE0m r\u0103ng"
+    correctAnsAudio: {fileID: 8300000, guid: 359571fa4a894544d8f0531b575c0367, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cr\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 6841b803c468b2548adf6108e41afed9, type: 3}
+    options:
+    - text: "N\u01B0\u1EDBc ng\u1ECDt"
+      imgPath: {fileID: 21300000, guid: d4aecd638cbb9b043ab1a0c3946e9e47, type: 3}
+    - text: "B\u1EAFp rang"
+      imgPath: {fileID: 21300000, guid: 0c6c4b71cc7ec97428caab7d31a0efdd, type: 3}
+    correctAns: "B\u1EAFp rang"
+    correctAnsAudio: {fileID: 8300000, guid: 08c8fcf27ce68e442b995109bcdd2fed, type: 3}

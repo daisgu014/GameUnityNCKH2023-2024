@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: q
+  m_EditorClassIdentifier: 
+  chooseOption: q
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cq\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: a0247fd36b61b7c45b4ccbd9b28d5924, type: 3}
+    options:
+    - text: "Tr\xE1i qu\xFDt"
+      imgPath: {fileID: 21300000, guid: ec8be6d0d264c5641b83b4d2b17825a3, type: 3}
+    - text: "Tr\xE1i t\xE1o"
+      imgPath: {fileID: 21300000, guid: b755c5ba09d0ff743a648c70d1dfe0a2, type: 3}
+    correctAns: "Tr\xE1i qu\xFDt"
+    correctAnsAudio: {fileID: 8300000, guid: f7eecadcdaf476348bb67d0d713147ff, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cq\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: a0247fd36b61b7c45b4ccbd9b28d5924, type: 3}
+    options:
+    - text: Hoa mai
+      imgPath: {fileID: 21300000, guid: d12318f9fd40d5a42a9b3102601ad701, type: 3}
+    - text: "Hoa \u0111\u1ED7 quy\xEAn"
+      imgPath: {fileID: 21300000, guid: bed215f6fc6162d4b84ee3ca37197f5b, type: 3}
+    correctAns: "Hoa \u0111\u1ED7 quy\xEAn"
+    correctAnsAudio: {fileID: 8300000, guid: b0fb754be5e397645bb4e59cc8372635, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cq\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: a0247fd36b61b7c45b4ccbd9b28d5924, type: 3}
+    options:
+    - text: "Hoa hu\u1EC7"
+      imgPath: {fileID: 21300000, guid: 272fce3859ca57d41a3e908c69c5b4fb, type: 3}
+    - text: "Hoa qu\u1EF3nh"
+      imgPath: {fileID: 21300000, guid: f3ffc7224a473d448b7acf6235290105, type: 3}
+    correctAns: "Hoa qu\u1EF3nh"
+    correctAnsAudio: {fileID: 8300000, guid: 35582d5af836b934e9f07d5d661ac1f3, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cq\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: f66db2f8c1a20bf4fb94d7394759e718, type: 3}
+    options:
+    - text: "Con d\u01A1i"
+      imgPath: {fileID: 21300000, guid: 51e3c8b2867ed364bb4aece9f51e7d96, type: 3}
+    - text: "Con qu\u1EA1"
+      imgPath: {fileID: 21300000, guid: 3dc5c2154bca21a4ba0bb5d6ae1b793b, type: 3}
+    correctAns: "Con qu\u1EA1"
+    correctAnsAudio: {fileID: 8300000, guid: 78dc3b14b08620144b7c916ab9f972fe, type: 3}

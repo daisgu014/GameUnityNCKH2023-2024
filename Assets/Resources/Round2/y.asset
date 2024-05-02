@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: y
+  m_EditorClassIdentifier: 
+  chooseOption: y
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cy\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 6d713e37645dc864bae0000ea546069f, type: 3}
+    options:
+    - text: "C\xE1i ly "
+      imgPath: {fileID: 21300000, guid: ef7c0e45717a4ab4d95292aaf413407a, type: 3}
+    - text: "C\xE1i ch\xE9n"
+      imgPath: {fileID: 21300000, guid: b51889241964ba14d910eef8fa7a2764, type: 3}
+    correctAns: "C\xE1i ly "
+    correctAnsAudio: {fileID: 8300000, guid: 62583baf47f755346802fb12253860db, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Cy\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 6d713e37645dc864bae0000ea546069f, type: 3}
+    options:
+    - text: "Vi\xEAn k\u1EB9o"
+      imgPath: {fileID: 21300000, guid: 66f1897541bef7649973bfb5c94bf6a7, type: 3}
+    - text: "B\xE1nh quy"
+      imgPath: {fileID: 21300000, guid: a5243ecba555cbf4ca1cda62982483e8, type: 3}
+    correctAns: "B\xE1nh quy"
+    correctAnsAudio: {fileID: 8300000, guid: b29160599a4f20e42b5bb47e219603d2, type: 3}
