@@ -15,9 +15,9 @@ MonoBehaviour:
   word: "\u01A0"
   clip: {fileID: 0}
   texture: {fileID: 0}
-  uppercaseSound: {fileID: 0}
+  uppercaseSound: {fileID: 8300000, guid: bcdd14f2449452e43a2c99bd13c143d9, type: 3}
   chooseWordSound: {fileID: 0}
-  lowercaseSound: {fileID: 0}
-  chooseWordUpper: {fileID: 0}
-  chooseWordLower: {fileID: 0}
-  introWord: {fileID: 0}
+  lowercaseSound: {fileID: 8300000, guid: 68b3f06e2e627e44cb4d50ead644218a, type: 3}
+  chooseWordUpper: {fileID: 8300000, guid: 9cc8c79e6dc16a54d8d51704665f0e8f, type: 3}
+  chooseWordLower: {fileID: 8300000, guid: b41af2105f2328248abb28729907eabe, type: 3}
+  introWord: {fileID: 8300000, guid: 49c1212cfaaf9db4cbdf481697c04f8a, type: 3}

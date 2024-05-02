@@ -26,7 +26,7 @@ public class AlphabetR1 : MonoBehaviour
         GameObject button = word.transform.gameObject;
         GameObject g;
 
-        string vietnameseAlphabet = "AĂÂBCDĐEÊGHIKLMNOÔƠPQRSTUƯVWXY";
+        string vietnameseAlphabet = "AĂÂBCDĐEÊGHIKLMNOÔƠPQRSTUƯVXY";
         int i = 0;
         List<Color> colors = GenerateRandomColors(vietnameseAlphabet.Length);
         foreach (char character in vietnameseAlphabet)

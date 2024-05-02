@@ -15,9 +15,9 @@ MonoBehaviour:
   word: "\xCA"
   clip: {fileID: 0}
   texture: {fileID: 0}
-  uppercaseSound: {fileID: 0}
+  uppercaseSound: {fileID: 8300000, guid: 2e78167abc364d7469546730dbc58487, type: 3}
   chooseWordSound: {fileID: 0}
-  lowercaseSound: {fileID: 0}
-  chooseWordUpper: {fileID: 0}
-  chooseWordLower: {fileID: 0}
-  introWord: {fileID: 0}
+  lowercaseSound: {fileID: 8300000, guid: c3f2e6639f6e6de408aa7dce74f3f01e, type: 3}
+  chooseWordUpper: {fileID: 8300000, guid: 331e39f2e688a4542a671f7238d6318e, type: 3}
+  chooseWordLower: {fileID: 8300000, guid: d5863255486c3da4f80800c34936ad43, type: 3}
+  introWord: {fileID: 8300000, guid: 7d4e9d21a8b3855428f68be9b7e9eba1, type: 3}

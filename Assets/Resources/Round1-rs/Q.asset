@@ -15,9 +15,9 @@ MonoBehaviour:
   word: Q
   clip: {fileID: 0}
   texture: {fileID: 0}
-  uppercaseSound: {fileID: 0}
+  uppercaseSound: {fileID: 8300000, guid: 1893da14e0acf1644a3d0543ce25d7b7, type: 3}
   chooseWordSound: {fileID: 0}
-  lowercaseSound: {fileID: 0}
-  chooseWordUpper: {fileID: 0}
-  chooseWordLower: {fileID: 0}
-  introWord: {fileID: 0}
+  lowercaseSound: {fileID: 8300000, guid: a51536d34a671574fb5682a725df90a5, type: 3}
+  chooseWordUpper: {fileID: 8300000, guid: 59e99af3405c66747b3a455eda4c7791, type: 3}
+  chooseWordLower: {fileID: 8300000, guid: f42c911e775efe14386d0b2a113baaac, type: 3}
+  introWord: {fileID: 8300000, guid: afc104edb045c604da95d1b1bdbe5c47, type: 3}

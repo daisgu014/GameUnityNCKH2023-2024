@@ -15,9 +15,9 @@ MonoBehaviour:
   word: N
   clip: {fileID: 0}
   texture: {fileID: 0}
-  uppercaseSound: {fileID: 0}
+  uppercaseSound: {fileID: 8300000, guid: 9fa4c317ea407704d8cf99bb2bda9a27, type: 3}
   chooseWordSound: {fileID: 0}
-  lowercaseSound: {fileID: 0}
-  chooseWordUpper: {fileID: 0}
-  chooseWordLower: {fileID: 0}
-  introWord: {fileID: 0}
+  lowercaseSound: {fileID: 8300000, guid: b630d9674e175eb4ea9cf5e6444e01a0, type: 3}
+  chooseWordUpper: {fileID: 8300000, guid: f6070f5af4ba3544ab48b9d0601d28f1, type: 3}
+  chooseWordLower: {fileID: 8300000, guid: d6f7542570c213445921990716b2c598, type: 3}
+  introWord: {fileID: 8300000, guid: 6f0f302d32bcb4840b16f2e46e41eb03, type: 3}
