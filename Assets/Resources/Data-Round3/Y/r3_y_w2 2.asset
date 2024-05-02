@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e050b789a448d46c6ba4ffb07a9f6ac6, type: 3}
+  m_Name: r3_y_w2
+  m_EditorClassIdentifier: 
+  word: "B\xE1nh quy g\u1EEBng"
+  img: {fileID: 21300000, guid: 553b37d686f1c478eb78e073eb9835f0, type: 3}
+  isCorrect: 1
+  wordVoice: {fileID: 8300000, guid: aface0640301d491a9188a8e9bc9f596, type: 3}
+  X: -2
+  Y: 2

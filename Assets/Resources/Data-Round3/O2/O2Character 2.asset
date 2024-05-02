@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d536bfe3bea894e7db5ef86e75daf479, type: 3}
+  m_Name: O2Character
+  m_EditorClassIdentifier: 
+  words:
+  - {fileID: 11400000, guid: ba8476ab557224da78782bb80e2ed9af, type: 2}
+  - {fileID: 11400000, guid: 08086ab18048242d293277e6226c3287, type: 2}
+  - {fileID: 11400000, guid: a4edc8b12bb69406db70d516d7006e29, type: 2}
+  - {fileID: 11400000, guid: e29d936f48c084dce88550925c0104ac, type: 2}
+  - {fileID: 11400000, guid: 354d8498575084fe698ddde4cf8f5243, type: 2}
+  - {fileID: 11400000, guid: a162f9355834d45688c5ac72135b39e0, type: 2}
+  bgImage: {fileID: 21300000, guid: fc27861a222314a21bf62fab7cba21d6, type: 3}
+  introVoice: {fileID: 8300000, guid: 87634c3d730824a31b86386921e8f3e2, type: 3}
+  required: 4
