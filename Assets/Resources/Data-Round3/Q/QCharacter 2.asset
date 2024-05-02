@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d536bfe3bea894e7db5ef86e75daf479, type: 3}
+  m_Name: QCharacter
+  m_EditorClassIdentifier: 
+  words:
+  - {fileID: 11400000, guid: aa8e3b8e512d74f48b2de8201c7d9c37, type: 2}
+  - {fileID: 11400000, guid: 91929e49cd6044c69959d0e34f0ba1ff, type: 2}
+  - {fileID: 11400000, guid: 6a1ccad210b11468391fe5203b493e0a, type: 2}
+  - {fileID: 11400000, guid: 3c37dcdc6ac1549288cb6dfddf5f255d, type: 2}
+  - {fileID: 11400000, guid: f8b92d04fedd0430d850c18df8757b8a, type: 2}
+  - {fileID: 11400000, guid: 7de0db2e33e834af6ab6f162e2df6a84, type: 2}
+  - {fileID: 11400000, guid: 17ae48781621149d4b8751f2ecae2092, type: 2}
+  bgImage: {fileID: 21300000, guid: 9f9267338f8f2498494856602ae31589, type: 3}
+  introVoice: {fileID: 8300000, guid: c61f3b6a5f27f44adaf09300c155f3a4, type: 3}
+  required: 5

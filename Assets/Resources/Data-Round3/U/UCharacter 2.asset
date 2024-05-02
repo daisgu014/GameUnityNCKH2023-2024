@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d536bfe3bea894e7db5ef86e75daf479, type: 3}
+  m_Name: UCharacter
+  m_EditorClassIdentifier: 
+  words:
+  - {fileID: 11400000, guid: f143fac757eed43da961a16f1cde225a, type: 2}
+  - {fileID: 11400000, guid: 374f980ca090549e9b99e83afaec209a, type: 2}
+  - {fileID: 11400000, guid: d7c8e8939b7424165a6c3e8d161bdbf8, type: 2}
+  - {fileID: 11400000, guid: b246872e25fda4d89bba86fe4b552c31, type: 2}
+  - {fileID: 11400000, guid: b31a96c3a9d724645b75b6bff3cb5c7c, type: 2}
+  - {fileID: 11400000, guid: a339beecb343f48f499641ea04e9804d, type: 2}
+  - {fileID: 11400000, guid: 15537555c26584f6cae621915b164c50, type: 2}
+  bgImage: {fileID: 21300000, guid: 8ad67c766fab6465cb237b15f73bea23, type: 3}
+  introVoice: {fileID: 8300000, guid: b0f19d2ac86764a65a1bbff46aaad579, type: 3}
+  required: 5

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e050b789a448d46c6ba4ffb07a9f6ac6, type: 3}
+  m_Name: r3_s_w1
+  m_EditorClassIdentifier: 
+  word: "Con chim s\xE1o"
+  img: {fileID: 21300000, guid: a07f6b3be457d47d0a7e41632eccc27c, type: 3}
+  isCorrect: 1
+  wordVoice: {fileID: 8300000, guid: dc4b7c53265c341d48ad38d32b650d93, type: 3}
+  X: -5
+  Y: -1.5
