@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d536bfe3bea894e7db5ef86e75daf479, type: 3}
+  m_Name: SCharacter
+  m_EditorClassIdentifier: 
+  words:
+  - {fileID: 11400000, guid: 17f6acb16f4d6435db0311fa2cdf243e, type: 2}
+  - {fileID: 11400000, guid: 75d695c221fcf4a6b9adc496a0e6f3b2, type: 2}
+  - {fileID: 11400000, guid: 2fd3435aec7aa4eb6895a42b2c911298, type: 2}
+  - {fileID: 11400000, guid: 0e608be2a06064cb7bec62077263ea96, type: 2}
+  - {fileID: 11400000, guid: 13ef56b1d092a454baf8070bf9e3de4e, type: 2}
+  - {fileID: 11400000, guid: 7c9f01089b1f947e5b4923e5d4e2e00b, type: 2}
+  bgImage: {fileID: 21300000, guid: f228f6c55658845ccab2d6202f5a2d03, type: 3}
+  introVoice: {fileID: 8300000, guid: 1a49ed7a3ca40476494ec8b516f9fe3b, type: 3}
+  required: 5

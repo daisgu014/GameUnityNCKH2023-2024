@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   word: "Con c\xFA"
   img: {fileID: 21300000, guid: 7404a21091f2645bf834c33535ffd2e8, type: 3}
-  isCorrect: 1
+  isCorrect: 0
   wordVoice: {fileID: 8300000, guid: f04664b060dee43ab98d919adb869e8f, type: 3}
   X: -3
   Y: -2
