@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d536bfe3bea894e7db5ef86e75daf479, type: 3}
+  m_Name: GCharacter
+  m_EditorClassIdentifier: 
+  words:
+  - {fileID: 11400000, guid: ef3a39de6e8b04176bc9eb475591f176, type: 2}
+  - {fileID: 11400000, guid: a46eb029677184a6788d33b5626fa713, type: 2}
+  - {fileID: 11400000, guid: e054d4187cb034a47952d6496bcadc04, type: 2}
+  - {fileID: 11400000, guid: 088415f6639e74ccb8b80a0b78972a95, type: 2}
+  - {fileID: 11400000, guid: 426d929d4c0574edb9991d9850ed1b42, type: 2}
+  - {fileID: 11400000, guid: 698b8be46aa4941259f8ce01a784f69e, type: 2}
+  bgImage: {fileID: 21300000, guid: 34455e4ef9fd4428d96dea1e76b34576, type: 3}
+  introVoice: {fileID: 8300000, guid: c922d46c17ba74ca491bf6a551ae821f, type: 3}
+  required: 4

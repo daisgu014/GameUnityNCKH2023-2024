@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d536bfe3bea894e7db5ef86e75daf479, type: 3}
+  m_Name: D2Character
+  m_EditorClassIdentifier: 
+  words:
+  - {fileID: 11400000, guid: 38756ee5b68c1401286d9094decf75ea, type: 2}
+  - {fileID: 11400000, guid: 0556b3e04b7d746f6b91a8fe09827c38, type: 2}
+  - {fileID: 11400000, guid: dc75ddcbb01a64058a0afda2947c94b2, type: 2}
+  - {fileID: 11400000, guid: 21fd1fe77f4d346c9a462903bd6af4c8, type: 2}
+  - {fileID: 11400000, guid: 0bab24e80b9394f919ea3710ece1f3ca, type: 2}
+  - {fileID: 11400000, guid: edb71c65ffab949ecbba9f2bed5c4ca1, type: 2}
+  - {fileID: 11400000, guid: 957aa2676a26549beb9f9d2e6eb229a3, type: 2}
+  - {fileID: 11400000, guid: f2e7f3b958b914905b7c9848f48a62f5, type: 2}
+  bgImage: {fileID: 21300000, guid: 0f8e1e75a8b5e4227aad3444c2d4ccb4, type: 3}
+  introVoice: {fileID: 8300000, guid: dba607ab9bd5340e790f72f7ab2ba055, type: 3}
+  required: 6

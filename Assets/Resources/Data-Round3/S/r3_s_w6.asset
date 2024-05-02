@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e050b789a448d46c6ba4ffb07a9f6ac6, type: 3}
+  m_Name: r3_s_w6
+  m_EditorClassIdentifier: 
+  word: "Con s\u01B0 t\u1EED"
+  img: {fileID: 21300000, guid: 9ffcc1e21a48343b6be79a1ccea5a04a, type: 3}
+  isCorrect: 1
+  wordVoice: {fileID: 8300000, guid: 9f03d1f2d118241a58ea4cc6581e9bb0, type: 3}
+  X: -4
+  Y: 2
