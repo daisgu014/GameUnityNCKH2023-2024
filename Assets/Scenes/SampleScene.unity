@@ -872,6 +872,30 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4607221ca5e0c2a4690749b7135b1cb8, type: 2}
   - {fileID: 11400000, guid: 9ac03212f34b1594081e0bcd8203c4b8, type: 2}
   - {fileID: 11400000, guid: 37d2bbd26facf514ba6ba4637448b809, type: 2}
+  - {fileID: 11400000, guid: 0b491b792e2423f40ae8170102ac43b9, type: 2}
+  - {fileID: 11400000, guid: 03957f39bbf07ed4ba920fcd8bbb23a1, type: 2}
+  - {fileID: 11400000, guid: 3cd707db66ac34d43b12c02b17171dad, type: 2}
+  - {fileID: 11400000, guid: 5e3dd24183e08af499912c574903a650, type: 2}
+  - {fileID: 11400000, guid: b297e995fcd555642acdc1f01ff38495, type: 2}
+  - {fileID: 11400000, guid: 0424074bbdb3763479c38b0c32530c0d, type: 2}
+  - {fileID: 11400000, guid: f07ac2bdb4c6f3f439e6be06ba87fb42, type: 2}
+  - {fileID: 11400000, guid: 9cef5123727a4df46a84fb7522e5b7b0, type: 2}
+  - {fileID: 11400000, guid: 060166000980a084fb64bd7f64209391, type: 2}
+  - {fileID: 11400000, guid: c494b8ba55e1b6548a450f8051c53f1b, type: 2}
+  - {fileID: 11400000, guid: cd7ae9fb3dac9f34fb677e59e45f2d4a, type: 2}
+  - {fileID: 11400000, guid: d0a772bcd534a6b44bb77b5f3022f585, type: 2}
+  - {fileID: 11400000, guid: e75f453b33be73c4184308446564228c, type: 2}
+  - {fileID: 11400000, guid: efcfec70da733ba4893a6baac2a22dbc, type: 2}
+  - {fileID: 11400000, guid: 5b6756fa3335f1344932629826861fd4, type: 2}
+  - {fileID: 11400000, guid: b46db78f6ea9e734e8cda5c3191aa0d3, type: 2}
+  - {fileID: 11400000, guid: 6ff3edca82acc7146885f71a89071a06, type: 2}
+  - {fileID: 11400000, guid: 25c6e0b95361ea04b95b492f99724a2e, type: 2}
+  - {fileID: 11400000, guid: 861d67dadba557546841038c7317ccf6, type: 2}
+  - {fileID: 11400000, guid: e1a657062e59e9c4bb90532b69090582, type: 2}
+  - {fileID: 11400000, guid: daf8b6143e45bbd4e84c9e4753fc1074, type: 2}
+  - {fileID: 11400000, guid: 5ced6067616e3f14ea47a5a33a98a8ac, type: 2}
+  - {fileID: 11400000, guid: ac4d8cf5516bda342836a00e0adb586e, type: 2}
+  - {fileID: 11400000, guid: 3eb134897a6d9654aaff97669884ebf7, type: 2}
   indexWord: {fileID: 11400000, guid: 5ab090cdfa36abe4880ed2280773d736, type: 2}
 --- !u!4 &571766536
 Transform:
@@ -3235,7 +3259,7 @@ PrefabInstance:
     - target: {fileID: 3717766479304217095, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 7b10eb3f0ade49a44928a395e4c151fc, type: 2}
+      objectReference: {fileID: 11400000, guid: 88dbef83f4b7542fcb7248e1e360e472, type: 2}
     - target: {fileID: 3717766479304217095, guid: 3dfa0ff3cd83ad44d8d53a902152a2a6, type: 3}
       propertyPath: m_fontStyle
       value: 0

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: K
+  m_EditorClassIdentifier: 
+  chooseOption: K
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Ck\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 0230a4def112ee94b80a0f9f2f4cfce6, type: 3}
+    options:
+    - text: "Con ki\u1EBFn"
+      imgPath: {fileID: 21300000, guid: 2659e752b325bd049bdee9aad9c56d67, type: 3}
+    - text: "Con v\u1ECBt"
+      imgPath: {fileID: 21300000, guid: 0af8fad8f4f393a47823332fc0bb8741, type: 3}
+    correctAns: "Con ki\u1EBFn"
+    correctAnsAudio: {fileID: 8300000, guid: b9875a0d930fd524c9122d62d2de82b7, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Ck\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 075e5d48e67f57147ad494315606605b, type: 3}
+    options:
+    - text: "Vi\xEAn bi"
+      imgPath: {fileID: 21300000, guid: 9010e7f071c63a04db48349ae0d843e2, type: 3}
+    - text: "Vi\xEAn k\u1EB9o"
+      imgPath: {fileID: 21300000, guid: aee347b6450666a4e81944755df8c8d0, type: 3}
+    correctAns: "Vi\xEAn k\u1EB9o"
+    correctAnsAudio: {fileID: 8300000, guid: cab94f987055c3f4e97688f338377f7d, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Ck\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 075e5d48e67f57147ad494315606605b, type: 3}
+    options:
+    - text: "B\xE1nh quy"
+      imgPath: {fileID: 21300000, guid: 45a1e829f0cec0943bc545dbd663b66f, type: 3}
+    - text: Que kem
+      imgPath: {fileID: 21300000, guid: 21da0af348cdc6a49ad3526f82be9c00, type: 3}
+    correctAns: Que kem
+    correctAnsAudio: {fileID: 8300000, guid: 42a141ff4fdbd4742ae5763b80cfecf3, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201Ck\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 075e5d48e67f57147ad494315606605b, type: 3}
+    options:
+    - text: "Hoa h\u01B0\u1EDBng d\u01B0\u01A1ng"
+      imgPath: {fileID: 21300000, guid: a91e0e84e98c7904d8d455336b9db8f7, type: 3}
+    - text: "Hoa loa k\xE8n"
+      imgPath: {fileID: 21300000, guid: 1c7937cd91b7f7041b221da8a0c60d42, type: 3}
+    correctAns: "Hoa loa k\xE8n"
+    correctAnsAudio: {fileID: 8300000, guid: 0804c566ee5bfd84d92c85aae0ea80e3, type: 3}

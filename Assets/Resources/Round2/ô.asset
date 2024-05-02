@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f28d6a4ca6094b4ebe2701177c39b77, type: 3}
+  m_Name: "\xF4"
+  m_EditorClassIdentifier: 
+  chooseOption: "\xF4"
+  color: {r: 0, g: 0, b: 0, a: 0}
+  questionsList:
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201C\xF4\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 92dd5d6dd4566a345bb52259488ffd9b, type: 3}
+    options:
+    - text: "B\u1ECD c\xE1nh cam"
+      imgPath: {fileID: 21300000, guid: dccefe4ef915a95488cf146f6ea330e9, type: 3}
+    - text: "Chim b\u1ED3 c\xE2u"
+      imgPath: {fileID: 21300000, guid: 9c388b0102bfedb44aa49b8bb3f94e23, type: 3}
+    correctAns: "Chim b\u1ED3 c\xE2u"
+    correctAnsAudio: {fileID: 8300000, guid: ac3a1873017d2bf46903ce68ea8cdab1, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn con v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \u201C\xF4\u201D
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 92dd5d6dd4566a345bb52259488ffd9b, type: 3}
+    options:
+    - text: "Con b\xE1o"
+      imgPath: {fileID: 21300000, guid: 3f87e28d4278864498d6d1ee14e6b362, type: 3}
+    - text: "Con h\u1ED5"
+      imgPath: {fileID: 21300000, guid: ec1f652fa0a31f846a3bbb271a5d0110, type: 3}
+    correctAns: "Con h\u1ED5"
+    correctAnsAudio: {fileID: 8300000, guid: 07a375386cb530449973174fb286df08, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"\xF4\"
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: 7afc8187b3e99bb42b6d2603c2bc043e, type: 3}
+    options:
+    - text: "Tr\xE1i \u1ED5i"
+      imgPath: {fileID: 21300000, guid: 2ddba008b4b97654cac46c03faca0880, type: 3}
+    - text: "Tr\xE1i \u0111\xE0o"
+      imgPath: {fileID: 21300000, guid: 08e6dabab2e8e60478b27056d90fca2b, type: 3}
+    correctAns: "Tr\xE1i \u1ED5i"
+    correctAnsAudio: {fileID: 8300000, guid: 945e0d985a091f147aac9af364494958, type: 3}
+  - questionInfo: "B\xE9 h\xE3y ch\u1ECDn v\u1EADt c\xF3 ch\u1EE9a ch\u1EEF \"\xF4\"
+      nh\xE9!"
+    questionAudio: {fileID: 8300000, guid: ee7dbaa78855e494a8be8f79f4b3aedf, type: 3}
+    options:
+    - text: "Sao bi\u1EC3n"
+      imgPath: {fileID: 21300000, guid: 92a9e75c39297a4459b85158bde63dd8, type: 3}
+    - text: "San h\xF4"
+      imgPath: {fileID: 21300000, guid: 7617443ee7c3e2b48b6a8bf45083f06d, type: 3}
+    correctAns: "San h\xF4"
+    correctAnsAudio: {fileID: 8300000, guid: ece1e7f2f79c4444ca44968f7605b6b5, type: 3}
